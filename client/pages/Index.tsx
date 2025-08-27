@@ -277,15 +277,29 @@ export default function Index() {
               <CardContent>
                 <div className="space-y-4">
                   {[
-                    { name: "Paper Presentation", icon: "📄" },
-                    { name: "Project Presentation", icon: "💻" },
-                    { name: "Code Debugging", icon: "🐛" },
-                    { name: "Technical Quiz", icon: "🧠" },
-                    { name: "Poster Making", icon: "🎨" }
+                    { name: "Paper Presentation", icon: "📄", members: "1-2 Members", details: "(12-15 Slides)" },
+                    { name: "Project Presentation", icon: "💻", members: "3-4 Members", details: "" },
+                    { name: "Code Debugging", icon: "🐛", members: "1-2 Members", details: "" },
+                    { name: "Technical Quiz", icon: "🧠", members: "1-2 Members", details: "" },
+                    { name: "Poster Designing", icon: "🎨", members: "Individual", details: "" }
                   ].map((event, index) => (
-                    <div key={index} className="flex items-center space-x-3 p-3 bg-background/30 rounded-lg border border-primary/10">
-                      <span className="text-2xl">{event.icon}</span>
-                      <span className="font-medium text-foreground/90">{event.name}</span>
+                    <div key={index} className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <span className="text-2xl">{event.icon}</span>
+                        <span className="font-medium text-foreground/90">{event.name}</span>
+                      </div>
+                      <div className="ml-11 space-y-1">
+                        <div className="flex items-center space-x-2">
+                          <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
+                            {event.members}
+                          </span>
+                          {event.details && (
+                            <span className="text-xs text-foreground/60">
+                              {event.details}
+                            </span>
+                          )}
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>
