@@ -553,7 +553,7 @@ export default function Index() {
 
           <div className="border-t border-border/30 pt-8 text-center">
             <p className="text-foreground/60">
-              © 2024 Webrania - CSE Department Association, AL-AMEEN ENGINEERING COLLEGE. Building the future together.
+              © 2024 WEBRANIA - CSE Department Association, AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS). Building the future together.
             </p>
           </div>
         </div>
