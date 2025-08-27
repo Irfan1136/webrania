@@ -311,7 +311,7 @@ export default function Index() {
                   </div>
                   <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                     <p className="text-sm text-foreground/80 italic">
-                      Show off your unique talents, from singing and dancing to stand-up comedy and more!
+                      Show off your unique talents, from singing to stand-up comedy and more!
                     </p>
                   </div>
                 </div>
