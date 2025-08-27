@@ -79,24 +79,37 @@ export default function Index() {
             <div className="flex items-center justify-center mb-8">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
-                alt="Webrania Logo"
+                alt="WEBRANIA Logo"
                 className="w-24 h-24 md:w-32 md:h-32 object-contain float-animation"
               />
             </div>
 
             <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 hover:bg-primary/30">
               <Sparkles className="w-4 h-4 mr-2" />
-              CSE Department Association
+              INAUGURATION FUNCTION
             </Badge>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
               Welcome to{" "}
-              <span className="gradient-text glow-text">Webrania</span>
+              <span className="gradient-text glow-text">WEBRANIA</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-primary/80 mb-6 font-semibold">
-              AL-AMEEN ENGINEERING COLLEGE
+            <p className="text-lg md:text-xl text-primary/80 mb-4 font-semibold">
+              "A Association of CSE Department"
             </p>
+
+            <p className="text-lg md:text-xl text-primary/80 mb-6 font-semibold">
+              AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)
+            </p>
+
+            <div className="text-center mb-6">
+              <Badge className="mb-2 bg-neon-green/20 text-neon-green border-neon-green/30">
+                NAAC "A" Grade Accredited
+              </Badge>
+              <p className="text-sm text-foreground/70">
+                Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai
+              </p>
+            </div>
             
             <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed max-w-3xl mx-auto">
               Building a strong and united Computer Science community where students, seniors, 
