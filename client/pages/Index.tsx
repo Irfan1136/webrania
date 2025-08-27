@@ -120,7 +120,7 @@ export default function Index() {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 glow-border text-lg px-8 py-6"
-                onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join Webrania Community'}
+                onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join WEBRANIA Community'}
               >
                 Join Our Community
                 <ChevronRight className="w-5 h-5 ml-2" />
