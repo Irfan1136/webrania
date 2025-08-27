@@ -276,6 +276,104 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-20 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-neon-blue/20 text-neon-blue border-neon-blue/30">
+              <Users className="w-4 h-4 mr-2" />
+              Association Members & Staff
+            </Badge>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Contact <span className="gradient-text">Information</span>
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Association Members */}
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl gradient-text">Association Members</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHAMED IRFAN M</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">SECRETARY</span>
+                      <a href="tel:7598659947" className="text-foreground/80 hover:text-primary transition-colors font-mono">
+                        📞 7598659947
+                      </a>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">DHARSHAN S L</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 bg-secondary/20 text-foreground rounded-full font-medium">JOINT SECRETARY</span>
+                      <a href="tel:8248784050" className="text-foreground/80 hover:text-primary transition-colors font-mono">
+                        📞 8248784050
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Staff In Charge */}
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-neon-green to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl gradient-text">Staff In Charge</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIAYA THAHASEEN A</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 bg-neon-green/20 text-neon-green rounded-full font-medium">HEAD OF DEPARTMENT</span>
+                      <a href="tel:8122571174" className="text-foreground/80 hover:text-primary transition-colors font-mono">
+                        📞 8122571174
+                      </a>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED IBRAHIM</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">STAFF</span>
+                      <a href="tel:9994222786" className="text-foreground/80 hover:text-primary transition-colors font-mono">
+                        📞 9994222786
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* College Address */}
+          <Card className="max-w-4xl mx-auto glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+            <CardContent className="p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-6">
+                <MessageSquare className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 gradient-text">AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)</h3>
+              <div className="space-y-2 text-foreground/80">
+                <p className="font-semibold">Accredited with NAAC "A" Grade</p>
+                <p>Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai</p>
+                <p className="text-lg font-medium mt-4">📍 Address:</p>
+                <p>Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</p>
+                <p>Tamilnadu, India</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Events Section */}
       <section id="events" className="py-20 lg:py-32 bg-card/30">
         <div className="container mx-auto px-4 lg:px-8">
