@@ -545,6 +545,7 @@ export default function Index() {
                 <a href="#about" className="block text-foreground/80 hover:text-primary transition-colors">About</a>
                 <a href="#vision" className="block text-foreground/80 hover:text-primary transition-colors">Vision</a>
                 <a href="#mission" className="block text-foreground/80 hover:text-primary transition-colors">Mission</a>
+                <a href="#contact" className="block text-foreground/80 hover:text-primary transition-colors">Contact</a>
                 <a href="#events" className="block text-foreground/80 hover:text-primary transition-colors">Events</a>
               </div>
             </div>
