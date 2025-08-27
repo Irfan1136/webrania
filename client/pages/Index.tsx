@@ -218,7 +218,7 @@ export default function Index() {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-green/20 text-neon-green border-neon-green/30">
               <Heart className="w-4 h-4 mr-2" />
-              About Webrania
+              About WEBRANIA
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Building Tomorrow's <span className="gradient-text">Tech Leaders</span>
@@ -227,12 +227,29 @@ export default function Index() {
 
           <Card className="max-w-4xl mx-auto glow-card bg-card/50 backdrop-blur-sm border-primary/20 mb-16">
             <CardContent className="p-8 md:p-12 text-center">
-              <blockquote className="text-xl md:text-2xl leading-relaxed text-foreground/90 italic">
-                "Webrania – The CSE Department Association, is formed by students for students.
+              <blockquote className="text-xl md:text-2xl leading-relaxed text-foreground/90 italic mb-6">
+                "WEBRANIA – The CSE Department Association, is formed by students for students.
                 We aim to create a platform where every member can learn, innovate, and grow together.
                 From technical events to cultural programs, from academic support to problem-solving
-                with management, Webrania ensures that every student feels connected, supported, and inspired."
+                with management, WEBRANIA ensures that every student feels connected, supported, and inspired."
               </blockquote>
+
+              <div className="grid md:grid-cols-2 gap-4 mt-8">
+                <div className="p-4 bg-neon-purple/10 rounded-lg border border-neon-purple/20">
+                  <div className="flex items-center justify-center mb-2">
+                    <span className="text-2xl mr-2">🏆</span>
+                    <h4 className="font-semibold text-neon-purple">Exciting Prizes</h4>
+                  </div>
+                  <p className="text-sm text-foreground/80">Win amazing prizes in our competitions and events!</p>
+                </div>
+                <div className="p-4 bg-neon-blue/10 rounded-lg border border-neon-blue/20">
+                  <div className="flex items-center justify-center mb-2">
+                    <span className="text-2xl mr-2">🎓</span>
+                    <h4 className="font-semibold text-neon-blue">Certificates</h4>
+                  </div>
+                  <p className="text-sm text-foreground/80">All participants receive E-certificates for participation!</p>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
