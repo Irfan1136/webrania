@@ -49,7 +49,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Button
               className="bg-primary hover:bg-primary/90 glow-border"
-              onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join Webrania Community'}
+              onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join WEBRANIA Community'}
             >
               Join Community
             </Button>
