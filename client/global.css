@@ -106,7 +106,7 @@
   }
 
   html {
-    @apply dark;
+    @apply bg-background text-foreground;
   }
 
   body {
