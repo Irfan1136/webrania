@@ -330,14 +330,19 @@ export default function Index() {
       {/* Footer */}
       <footer className="border-t border-border/50 bg-card/30 py-12">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-2 mb-6 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-neon-purple to-neon-blue rounded-lg flex items-center justify-center">
-                <Code className="w-5 h-5 text-white" />
+          <div className="flex flex-col md:flex-row items-center justify-between mb-8">
+            <div className="flex items-center space-x-3 mb-6 md:mb-0">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
+                alt="Webrania Logo"
+                className="w-10 h-10 object-contain"
+              />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold gradient-text">Webrania</span>
+                <span className="text-sm text-foreground/60">CSE Department Association</span>
               </div>
-              <span className="text-xl font-bold gradient-text">Webrania</span>
             </div>
-            
+
             <div className="flex items-center space-x-6">
               <Button variant="ghost" size="icon" className="text-foreground/60 hover:text-primary">
                 <Github className="w-5 h-5" />
@@ -345,15 +350,48 @@ export default function Index() {
               <Button variant="ghost" size="icon" className="text-foreground/60 hover:text-primary">
                 <Twitter className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-foreground/60 hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-foreground/60 hover:text-primary"
+                onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com'}
+              >
                 <Mail className="w-5 h-5" />
               </Button>
             </div>
           </div>
-          
-          <div className="border-t border-border/30 mt-8 pt-8 text-center">
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h4 className="font-semibold text-lg mb-3 gradient-text">Contact Us</h4>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-primary" />
+                  <a href="mailto:aec.webrania@gmail.com" className="text-foreground/80 hover:text-primary transition-colors">
+                    aec.webrania@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Users className="w-4 h-4 text-primary" />
+                  <span className="text-foreground/80">AL-AMEEN ENGINEERING COLLEGE</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-lg mb-3 gradient-text">Quick Links</h4>
+              <div className="space-y-2">
+                <a href="#about" className="block text-foreground/80 hover:text-primary transition-colors">About</a>
+                <a href="#vision" className="block text-foreground/80 hover:text-primary transition-colors">Vision</a>
+                <a href="#mission" className="block text-foreground/80 hover:text-primary transition-colors">Mission</a>
+                <a href="#events" className="block text-foreground/80 hover:text-primary transition-colors">Events</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-border/30 pt-8 text-center">
             <p className="text-foreground/60">
-              © 2024 Webrania Computer Science Association. Building the future together.
+              © 2024 Webrania - CSE Department Association, AL-AMEEN ENGINEERING COLLEGE. Building the future together.
             </p>
           </div>
         </div>
