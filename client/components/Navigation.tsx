@@ -77,7 +77,13 @@ export default function Navigation() {
                     </a>
                   );
                 })}
-                <Button className="bg-primary hover:bg-primary/90 mt-4">
+                <Button
+                  className="bg-primary hover:bg-primary/90 mt-4"
+                  onClick={() => {
+                    window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join Webrania Community';
+                    setIsOpen(false);
+                  }}
+                >
                   Join Community
                 </Button>
               </div>
