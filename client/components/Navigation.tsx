@@ -46,7 +46,10 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary hover:bg-primary/90 glow-border">
+            <Button
+              className="bg-primary hover:bg-primary/90 glow-border"
+              onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join Webrania Community'}
+            >
               Join Community
             </Button>
           </div>
