@@ -190,19 +190,30 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* About Section */}
       <section id="about" className="py-20 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-green/20 text-neon-green border-neon-green/30">
               <Heart className="w-4 h-4 mr-2" />
-              What We Do
+              About Webrania
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Building Tomorrow's <span className="gradient-text">Tech Leaders</span>
             </h2>
           </div>
-          
+
+          <Card className="max-w-4xl mx-auto glow-card bg-card/50 backdrop-blur-sm border-primary/20 mb-16">
+            <CardContent className="p-8 md:p-12 text-center">
+              <blockquote className="text-xl md:text-2xl leading-relaxed text-foreground/90 italic">
+                "Webrania – The CSE Department Association, is formed by students for students.
+                We aim to create a platform where every member can learn, innovate, and grow together.
+                From technical events to cultural programs, from academic support to problem-solving
+                with management, Webrania ensures that every student feels connected, supported, and inspired."
+              </blockquote>
+            </CardContent>
+          </Card>
+
           <div className="grid lg:grid-cols-3 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
