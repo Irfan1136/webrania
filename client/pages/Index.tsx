@@ -495,11 +495,11 @@ export default function Index() {
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
-                alt="Webrania Logo"
+                alt="WEBRANIA Logo"
                 className="w-10 h-10 object-contain"
               />
               <div className="flex flex-col">
-                <span className="text-xl font-bold gradient-text">Webrania</span>
+                <span className="text-xl font-bold gradient-text">WEBRANIA</span>
                 <span className="text-sm text-foreground/60">CSE Department Association</span>
               </div>
             </div>
