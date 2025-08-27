@@ -319,9 +319,16 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3 p-3 bg-background/30 rounded-lg border border-primary/10">
-                    <span className="text-2xl">🎭</span>
-                    <span className="font-medium text-foreground/90">Talent Show</span>
+                  <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <span className="text-2xl">🎭</span>
+                      <span className="font-medium text-foreground/90">Talent Show</span>
+                    </div>
+                    <div className="ml-11">
+                      <span className="text-xs px-2 py-1 bg-destructive/20 text-destructive rounded-full font-medium">
+                        No Group Dance
+                      </span>
+                    </div>
                   </div>
                   <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                     <p className="text-sm text-foreground/80 italic">
