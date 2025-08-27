@@ -328,7 +328,10 @@ export default function Index() {
               <p className="text-lg font-semibold gradient-text mb-6">
                 AL-AMEEN ENGINEERING COLLEGE
               </p>
-              <Button className="bg-primary hover:bg-primary/90">
+              <Button
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Event Registration'}
+              >
                 Register for Events
               </Button>
             </CardContent>
