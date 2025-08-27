@@ -243,26 +243,84 @@ export default function Index() {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30">
               <Calendar className="w-4 h-4 mr-2" />
-              Upcoming Events
+              Our Events
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Stay <span className="gradient-text">Connected</span>
+              Join Our <span className="gradient-text">Events</span>
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              Join our events and be part of the growing Webrania community
+              Participate in technical and non-technical events designed to enhance your skills and showcase your talents
             </p>
           </div>
-          
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            {/* Technical Events */}
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Code className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl gradient-text">Technical Events</CardTitle>
+                <CardDescription className="text-foreground/80">
+                  Showcase your technical prowess and problem-solving skills
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {[
+                    { name: "Paper Presentation", icon: "📄" },
+                    { name: "Project Presentation", icon: "💻" },
+                    { name: "Code Debugging", icon: "🐛" },
+                    { name: "Technical Quiz", icon: "🧠" },
+                    { name: "Poster Making", icon: "🎨" }
+                  ].map((event, index) => (
+                    <div key={index} className="flex items-center space-x-3 p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <span className="text-2xl">{event.icon}</span>
+                      <span className="font-medium text-foreground/90">{event.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Non-Technical Events */}
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-neon-green to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl gradient-text">Non-Technical Events</CardTitle>
+                <CardDescription className="text-foreground/80">
+                  Express your creativity and showcase your diverse talents
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 p-3 bg-background/30 rounded-lg border border-primary/10">
+                    <span className="text-2xl">🎭</span>
+                    <span className="font-medium text-foreground/90">Talent Show</span>
+                  </div>
+                  <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
+                    <p className="text-sm text-foreground/80 italic">
+                      Show off your unique talents, from singing and dancing to stand-up comedy and more!
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           <Card className="max-w-2xl mx-auto glow-card bg-card/50 backdrop-blur-sm border-primary/20">
-            <CardContent className="text-center py-12">
-              <Calendar className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Events Coming Soon</h3>
-              <p className="text-foreground/80 mb-6">
-                We're planning exciting workshops, coding competitions, and networking events. 
-                Stay tuned for announcements!
+            <CardContent className="text-center py-8">
+              <div className="flex items-center justify-center space-x-2 mb-4">
+                <span className="text-2xl">🏆</span>
+                <h3 className="text-xl font-bold">Chief Guest</h3>
+              </div>
+              <p className="text-lg font-semibold gradient-text mb-6">
+                AL-AMEEN ENGINEERING COLLEGE
               </p>
               <Button className="bg-primary hover:bg-primary/90">
-                Get Notified
+                Register for Events
               </Button>
             </CardContent>
           </Card>
