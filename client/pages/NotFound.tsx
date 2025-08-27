@@ -20,8 +20,8 @@ export default function NotFound() {
               <h1 className="text-4xl font-bold mb-4">404</h1>
               <h2 className="text-xl font-semibold mb-4 gradient-text">Page Not Found</h2>
               <p className="text-foreground/80 mb-8 leading-relaxed">
-                The page you're looking for doesn't exist yet. 
-                We're constantly building new features for the Webrania community.
+                The page you're looking for doesn't exist yet.
+                We're constantly building new features for the WEBRANIA community.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
