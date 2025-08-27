@@ -11,6 +11,7 @@ export default function Navigation() {
     { name: "About", href: "#about", icon: Users },
     { name: "Vision", href: "#vision", icon: Target },
     { name: "Mission", href: "#mission", icon: MessageSquare },
+    { name: "Contact", href: "#contact", icon: MessageSquare },
     { name: "Events", href: "#events", icon: Calendar },
   ];
 
