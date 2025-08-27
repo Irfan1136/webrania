@@ -81,7 +81,7 @@ export default function Navigation() {
                 <Button
                   className="bg-primary hover:bg-primary/90 mt-4"
                   onClick={() => {
-                    window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join Webrania Community';
+                    window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join WEBRANIA Community';
                     setIsOpen(false);
                   }}
                 >
