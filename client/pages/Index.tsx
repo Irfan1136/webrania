@@ -613,12 +613,15 @@ export default function Index() {
                 <span className="text-2xl">🏆</span>
                 <h3 className="text-xl font-bold">Chief Guest</h3>
               </div>
-              <div className="mb-6">
+              <div className="mb-6 flex items-center justify-center space-x-2">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
-                  alt="AL-AMEEN ENGINEERING COLLEGE"
-                  className="w-32 h-12 object-contain mx-auto"
+                  alt="AL-AMEEN ENGINEERING COLLEGE Logo"
+                  className="w-8 h-8 object-contain"
                 />
+                <p className="text-lg font-semibold gradient-text">
+                  AL-AMEEN ENGINEERING COLLEGE
+                </p>
               </div>
               <Button
                 className="bg-primary hover:bg-primary/90"
