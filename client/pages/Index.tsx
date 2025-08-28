@@ -413,13 +413,43 @@ export default function Index() {
               <CardContent>
                 <div className="space-y-4">
                   {[
-                    { name: "Paper Presentation", icon: "📄", members: "1-2 Members", details: "(12-15 Slides)" },
-                    { name: "Project Presentation", icon: "💻", members: "3-4 Members", details: "" },
-                    { name: "Code Debugging", icon: "🐛", members: "1-2 Members", details: "" },
-                    { name: "Technical Quiz", icon: "🧠", members: "1-2 Members", details: "" },
-                    { name: "Poster Designing", icon: "🎨", members: "Individual", details: "" }
+                    {
+                      name: "Paper Presentation",
+                      icon: "📄",
+                      members: "1-2 Members",
+                      details: "(12-15 Slides)",
+                      description: "Present your research or technical concepts through a well-structured presentation. Topics can include latest technologies, innovations, or academic research."
+                    },
+                    {
+                      name: "Project Presentation",
+                      icon: "💻",
+                      members: "3-4 Members",
+                      details: "",
+                      description: "Showcase your completed or ongoing projects. Demonstrate functionality, explain technical implementation, and highlight innovation in your work."
+                    },
+                    {
+                      name: "Code Debugging",
+                      icon: "🐛",
+                      members: "1-2 Members",
+                      details: "",
+                      description: "Test your problem-solving skills by identifying and fixing errors in given code snippets. Multiple programming languages may be included."
+                    },
+                    {
+                      name: "Technical Quiz",
+                      icon: "🧠",
+                      members: "1-2 Members",
+                      details: "",
+                      description: "Challenge your knowledge in computer science fundamentals, programming concepts, current technology trends, and general technical awareness."
+                    },
+                    {
+                      name: "Poster Designing",
+                      icon: "🎨",
+                      members: "Individual",
+                      details: "",
+                      description: "Create visually appealing and informative posters on technical topics. Combine creativity with technical content to communicate ideas effectively."
+                    }
                   ].map((event, index) => (
-                    <div key={index} className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                    <div key={index} className="group relative p-3 bg-background/30 rounded-lg border border-primary/10 hover:border-primary/30 hover:bg-background/50 transition-all duration-300 cursor-pointer">
                       <div className="flex items-center space-x-3 mb-2">
                         <span className="text-2xl">{event.icon}</span>
                         <span className="font-medium text-foreground/90">{event.name}</span>
@@ -435,6 +465,11 @@ export default function Index() {
                             </span>
                           )}
                         </div>
+                      </div>
+
+                      {/* Hover Description */}
+                      <div className="absolute left-0 right-0 top-full mt-2 p-3 bg-card/95 backdrop-blur-sm border border-primary/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                        <p className="text-sm text-foreground/90 leading-relaxed">{event.description}</p>
                       </div>
                     </div>
                   ))}
