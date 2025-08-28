@@ -113,11 +113,20 @@ export default function Index() {
 
             <div className="text-center mb-6 p-4 rounded-lg border border-primary/20">
               <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
-                  alt="AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)"
-                  className="w-32 h-12 md:w-40 md:h-16 object-contain"
-                />
+                <div className="flex items-center justify-center space-x-3 mb-2">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                    alt="AL-AMEEN ENGINEERING COLLEGE Logo"
+                    className="w-8 h-8 object-contain"
+                  />
+                  <p className="text-lg md:text-xl text-primary/80 font-semibold">
+                    <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
+                      AL-AMEEN ENGINEERING COLLEGE
+                      <br />
+                      <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+                    </span>
+                  </p>
+                </div>
               </div>
               <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
                 <p className="text-sm text-foreground/80 mb-2">
@@ -416,7 +425,7 @@ export default function Index() {
                   {[
                     {
                       name: "Paper Presentation",
-                      icon: "📄",
+                      icon: "����",
                       members: "1-2 Members",
                       details: "(12-15 Slides)",
                       description: "Present your research findings, technical innovations, or emerging technology concepts through a professional presentation. Topics can cover AI/ML, blockchain, IoT, cybersecurity, software engineering, web development, mobile computing, or any cutting-edge technology. Presentations should be well-researched, technically sound, and include practical applications. Judges will evaluate based on content quality, presentation skills, technical depth, innovation, and Q&A handling. Time limit: 8-10 minutes plus 2-3 minutes for questions. Visual aids and demonstrations are encouraged."
