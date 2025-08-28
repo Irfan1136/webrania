@@ -106,10 +106,10 @@ export default function Index() {
               </span>
             </p>
 
-            <div className="text-center mb-6">
-              <Badge className="mb-2 bg-neon-green/20 text-neon-green border-neon-green/30">
-                NAAC "A" Grade Accredited
-              </Badge>
+            <div className="text-center mb-6 p-4 bg-background/20 rounded-lg border border-primary/20">
+              <p className="text-sm text-foreground/80 mb-2">
+                Accredited with NAAC "A" Grade
+              </p>
               <p className="text-sm text-foreground/70">
                 Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai
               </p>
