@@ -24,6 +24,16 @@ import {
 } from "lucide-react";
 
 export default function Index() {
+  const [expandedEvents, setExpandedEvents] = useState<{[key: string]: boolean}>({});
+  const [expandedTalentShow, setExpandedTalentShow] = useState(false);
+
+  const toggleEventDescription = (eventName: string) => {
+    setExpandedEvents(prev => ({
+      ...prev,
+      [eventName]: !prev[eventName]
+    }));
+  };
+
   const missionPoints = [
     {
       icon: Users,
