@@ -99,7 +99,11 @@ export default function Index() {
             </p>
 
             <p className="text-lg md:text-xl text-primary/80 mb-6 font-semibold">
-              AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)
+              <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
+                AL-AMEEN ENGINEERING COLLEGE
+                <br />
+                <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+              </span>
             </p>
 
             <div className="text-center mb-6">
