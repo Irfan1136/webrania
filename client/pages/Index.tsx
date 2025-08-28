@@ -491,7 +491,7 @@ export default function Index() {
                     {/* Hover Description */}
                     <div className="absolute left-0 right-0 top-full mt-2 p-3 bg-card/95 backdrop-blur-sm border border-primary/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                       <p className="text-sm text-foreground/90 leading-relaxed">
-                        Showcase your individual talents including singing, musical instruments, stand-up comedy, poetry, storytelling, magic tricks, or any other creative performance. Group dance is not allowed, but solo dance performances are welcome!
+                        Express your unique individual talents and creativity! Accepted performances include: vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any other creative solo performance. Group dance is strictly prohibited, but all other individual talents are welcomed and encouraged. Time limit: 3-5 minutes per performance. Participants may use backing tracks or instrumental music. Evaluation criteria include creativity, stage presence, audience engagement, technical skill, and entertainment value. Prizes for most creative, most entertaining, and best overall performance!
                       </p>
                     </div>
                   </div>
