@@ -511,10 +511,30 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="group relative p-3 bg-background/30 rounded-lg border border-primary/10 hover:border-primary/30 hover:bg-background/50 transition-all duration-300 cursor-pointer">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <span className="text-2xl">🎭</span>
-                      <span className="font-medium text-foreground/90">Talent Show</span>
+                  <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center space-x-3">
+                        <span className="text-2xl">🎭</span>
+                        <span className="font-medium text-foreground/90">Talent Show</span>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => setExpandedTalentShow(!expandedTalentShow)}
+                        className="h-6 px-2 text-xs"
+                      >
+                        {expandedTalentShow ? (
+                          <>
+                            <ChevronUp className="w-3 h-3 mr-1" />
+                            Less
+                          </>
+                        ) : (
+                          <>
+                            <ChevronDown className="w-3 h-3 mr-1" />
+                            More
+                          </>
+                        )}
+                      </Button>
                     </div>
                     <div className="ml-11">
                       <span className="text-xs px-2 py-1 bg-destructive/20 text-destructive rounded-full font-medium">
@@ -522,12 +542,14 @@ export default function Index() {
                       </span>
                     </div>
 
-                    {/* Hover Description */}
-                    <div className="absolute left-0 right-0 top-full mt-2 p-3 bg-card/95 backdrop-blur-sm border border-primary/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <p className="text-sm text-foreground/90 leading-relaxed">
-                        Express your unique individual talents and creativity! Accepted performances include: vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any other creative solo performance. Group dance is strictly prohibited, but all other individual talents are welcomed and encouraged. Time limit: 3-5 minutes per performance. Participants may use backing tracks or instrumental music. Evaluation criteria include creativity, stage presence, audience engagement, technical skill, and entertainment value. Prizes for most creative, most entertaining, and best overall performance!
-                      </p>
-                    </div>
+                    {/* Click-based Description */}
+                    {expandedTalentShow && (
+                      <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
+                        <p className="text-sm text-foreground/90 leading-relaxed">
+                          Express your unique individual talents and creativity! Accepted performances include: vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any other creative solo performance. Group dance is strictly prohibited, but all other individual talents are welcomed and encouraged. Time limit: 3-5 minutes per performance. Participants may use backing tracks or instrumental music. Evaluation criteria include creativity, stage presence, audience engagement, technical skill, and entertainment value. Prizes for most creative, most entertaining, and best overall performance!
+                        </p>
+                      </div>
+                    )}
                   </div>
                   <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                     <p className="text-sm text-foreground/80 italic">
