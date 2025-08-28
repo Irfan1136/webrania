@@ -405,35 +405,35 @@ export default function Index() {
                       icon: "📄",
                       members: "1-2 Members",
                       details: "(12-15 Slides)",
-                      description: "Present your research or technical concepts through a well-structured presentation. Topics can include latest technologies, innovations, or academic research."
+                      description: "Present your research findings, technical innovations, or emerging technology concepts through a professional presentation. Topics can cover AI/ML, blockchain, IoT, cybersecurity, software engineering, web development, mobile computing, or any cutting-edge technology. Presentations should be well-researched, technically sound, and include practical applications. Judges will evaluate based on content quality, presentation skills, technical depth, innovation, and Q&A handling. Time limit: 8-10 minutes plus 2-3 minutes for questions. Visual aids and demonstrations are encouraged."
                     },
                     {
                       name: "Project Presentation",
                       icon: "💻",
                       members: "3-4 Members",
                       details: "",
-                      description: "Showcase your completed or ongoing projects. Demonstrate functionality, explain technical implementation, and highlight innovation in your work."
+                      description: "Showcase your completed software/hardware projects with live demonstrations. Projects can include web applications, mobile apps, desktop software, embedded systems, IoT devices, games, or any innovative technical solution. Teams must present the problem statement, solution approach, technical architecture, implementation details, challenges faced, and future enhancements. Demonstration of working prototype is mandatory. Evaluation criteria include innovation, technical complexity, user interface, functionality, code quality, teamwork, and presentation clarity. Time limit: 12-15 minutes including demo and Q&A."
                     },
                     {
                       name: "Code Debugging",
                       icon: "🐛",
                       members: "1-2 Members",
                       details: "",
-                      description: "Test your problem-solving skills by identifying and fixing errors in given code snippets. Multiple programming languages may be included."
+                      description: "Test your analytical and problem-solving skills by identifying, analyzing, and fixing logical errors, syntax errors, and runtime issues in provided code snippets. Programming languages may include C, C++, Java, Python, JavaScript, or pseudo-code. Participants will receive code samples with intentional bugs and must provide corrected versions with explanations. Types of errors include infinite loops, memory leaks, incorrect algorithms, wrong data structures, improper variable usage, and logical mistakes. Time limit: 45-60 minutes. Points awarded for correct identification, proper fixes, and clear explanations of the debugging process."
                     },
                     {
                       name: "Technical Quiz",
                       icon: "🧠",
                       members: "1-2 Members",
                       details: "",
-                      description: "Challenge your knowledge in computer science fundamentals, programming concepts, current technology trends, and general technical awareness."
+                      description: "Comprehensive knowledge test covering computer science fundamentals, programming concepts, current technology trends, and industry awareness. Topics include data structures & algorithms, operating systems, database management, computer networks, software engineering, object-oriented programming, web technologies, mobile development, artificial intelligence, machine learning, cybersecurity, cloud computing, and latest tech news. Question formats include multiple choice, fill-in-the-blanks, true/false, and short answers. Rapid-fire rounds test quick thinking. Total questions: 50-75. Time limit: 60-90 minutes. Bonus points for innovative answers and real-world applications."
                     },
                     {
                       name: "Poster Designing",
                       icon: "🎨",
                       members: "Individual",
                       details: "",
-                      description: "Create visually appealing and informative posters on technical topics. Combine creativity with technical content to communicate ideas effectively."
+                      description: "Design creative and informative posters on cutting-edge technical topics, combining artistic creativity with technical accuracy. Themes can include emerging technologies, future of computing, digital transformation, tech innovations, environmental technology, or social impact of technology. Posters should be visually appealing, well-researched, informative, and technically accurate. Use of graphics, charts, infographics, and creative layouts is encouraged. Size: A1 or A2 format. Evaluation based on creativity, technical content, visual appeal, originality, research quality, and message clarity. Digital tools or hand-drawing both accepted. Time limit: 2-3 hours for on-spot creation."
                     }
                   ].map((event, index) => (
                     <div key={index} className="group relative p-3 bg-background/30 rounded-lg border border-primary/10 hover:border-primary/30 hover:bg-background/50 transition-all duration-300 cursor-pointer">
