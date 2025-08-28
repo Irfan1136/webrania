@@ -89,12 +89,7 @@ export default function Index() {
         <div className="absolute inset-0 grid-bg opacity-30"></div>
         <div className="relative container mx-auto px-4 lg:px-8 py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex items-center justify-center space-x-8 mb-8">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
-                alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                className="w-20 h-20 md:w-28 md:h-28 object-contain float-animation"
-              />
+            <div className="flex items-center justify-center mb-8">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
                 alt="WEBRANIA Logo"
@@ -118,20 +113,20 @@ export default function Index() {
 
             <div className="text-center mb-6 p-4 rounded-lg border border-primary/20">
               <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
-                <p className="text-lg md:text-xl text-primary/80 font-semibold">
-                  <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
-                    AL-AMEEN ENGINEERING COLLEGE
-                    <br />
-                    <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
-                  </span>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                  alt="AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)"
+                  className="w-32 h-12 md:w-40 md:h-16 object-contain"
+                />
+              </div>
+              <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
+                <p className="text-sm text-foreground/80 mb-2">
+                  Accredited with NAAC "A" Grade
+                </p>
+                <p className="text-sm text-foreground/70">
+                  Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai
                 </p>
               </div>
-              <p className="text-sm text-foreground/80 mb-2">
-                Accredited with NAAC "A" Grade
-              </p>
-              <p className="text-sm text-foreground/70">
-                Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai
-              </p>
             </div>
             
             <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed max-w-3xl mx-auto">
