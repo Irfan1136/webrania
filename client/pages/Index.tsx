@@ -490,7 +490,7 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                  <div className="group relative p-3 bg-background/30 rounded-lg border border-primary/10 hover:border-primary/30 hover:bg-background/50 transition-all duration-300 cursor-pointer">
                     <div className="flex items-center space-x-3 mb-2">
                       <span className="text-2xl">🎭</span>
                       <span className="font-medium text-foreground/90">Talent Show</span>
@@ -499,6 +499,13 @@ export default function Index() {
                       <span className="text-xs px-2 py-1 bg-destructive/20 text-destructive rounded-full font-medium">
                         No Group Dance
                       </span>
+                    </div>
+
+                    {/* Hover Description */}
+                    <div className="absolute left-0 right-0 top-full mt-2 p-3 bg-card/95 backdrop-blur-sm border border-primary/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                      <p className="text-sm text-foreground/90 leading-relaxed">
+                        Showcase your individual talents including singing, musical instruments, stand-up comedy, poetry, storytelling, magic tricks, or any other creative performance. Group dance is not allowed, but solo dance performances are welcome!
+                      </p>
                     </div>
                   </div>
                   <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
