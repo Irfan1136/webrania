@@ -365,11 +365,13 @@ export default function Index() {
               <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 gradient-text">
-                AL-AMEEN ENGINEERING COLLEGE
-                <br />
-                <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
-              </h3>
+              <div className="bg-background/20 p-4 rounded-lg mb-4">
+                <h3 className="text-2xl font-bold gradient-text">
+                  AL-AMEEN ENGINEERING COLLEGE
+                  <br />
+                  <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+                </h3>
+              </div>
               <div className="space-y-2 text-foreground/80 bg-background/20 p-4 rounded-lg">
                 <p>Accredited with NAAC "A" Grade</p>
                 <p>Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai</p>
