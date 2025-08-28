@@ -374,7 +374,7 @@ export default function Index() {
                   <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
                 </h3>
               </div>
-              <div className="space-y-2 text-foreground/80 bg-background/20 p-4 rounded-lg">
+              <div className="space-y-2 text-foreground/80 bg-background/20 p-4 rounded-lg mt-2.5">
                 <p>Accredited with NAAC "A" Grade</p>
                 <p>Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai</p>
                 <p className="text-lg font-medium mt-4">📍 Address:</p>
@@ -575,7 +575,7 @@ export default function Index() {
                 </div>
                 <h4 className="text-xl font-semibold text-neon-purple mb-3">Exciting Prizes</h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Win amazing prizes in our competitions and events! Cash prizes, certificates of merit,
+                  Win amazing prizes in our competitions and events! certificates of merit,
                   and recognition for outstanding performances await the winners.
                 </p>
               </CardContent>
