@@ -646,11 +646,14 @@ export default function Index() {
               />
               <div className="flex flex-col">
                 <span className="text-xl font-bold gradient-text">WEBRANIA</span>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
-                  alt="AL-AMEEN ENGINEERING COLLEGE"
-                  className="w-24 h-4 object-contain"
-                />
+                <div className="flex items-center space-x-1">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                    alt="AL-AMEEN ENGINEERING COLLEGE Logo"
+                    className="w-4 h-4 object-contain"
+                  />
+                  <span className="text-sm text-foreground/60">CSE Department Association</span>
+                </div>
               </div>
             </div>
 
