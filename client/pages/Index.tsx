@@ -89,7 +89,12 @@ export default function Index() {
         <div className="absolute inset-0 grid-bg opacity-30"></div>
         <div className="relative container mx-auto px-4 lg:px-8 py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex items-center justify-center mb-8">
+            <div className="flex items-center justify-center space-x-8 mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                alt="AL-AMEEN ENGINEERING COLLEGE Logo"
+                className="w-20 h-20 md:w-28 md:h-28 object-contain float-animation"
+              />
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
                 alt="WEBRANIA Logo"
