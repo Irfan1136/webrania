@@ -448,10 +448,30 @@ export default function Index() {
                       description: "Design creative and informative posters on cutting-edge technical topics, combining artistic creativity with technical accuracy. Themes can include emerging technologies, future of computing, digital transformation, tech innovations, environmental technology, or social impact of technology. Posters should be visually appealing, well-researched, informative, and technically accurate. Use of graphics, charts, infographics, and creative layouts is encouraged. Size: A1 or A2 format. Evaluation based on creativity, technical content, visual appeal, originality, research quality, and message clarity. Digital tools or hand-drawing both accepted. Time limit: 2-3 hours for on-spot creation."
                     }
                   ].map((event, index) => (
-                    <div key={index} className="group relative p-3 bg-background/30 rounded-lg border border-primary/10 hover:border-primary/30 hover:bg-background/50 transition-all duration-300 cursor-pointer">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <span className="text-2xl">{event.icon}</span>
-                        <span className="font-medium text-foreground/90">{event.name}</span>
+                    <div key={index} className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center space-x-3">
+                          <span className="text-2xl">{event.icon}</span>
+                          <span className="font-medium text-foreground/90">{event.name}</span>
+                        </div>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => toggleEventDescription(event.name)}
+                          className="h-6 px-2 text-xs"
+                        >
+                          {expandedEvents[event.name] ? (
+                            <>
+                              <ChevronUp className="w-3 h-3 mr-1" />
+                              Less
+                            </>
+                          ) : (
+                            <>
+                              <ChevronDown className="w-3 h-3 mr-1" />
+                              More
+                            </>
+                          )}
+                        </Button>
                       </div>
                       <div className="ml-11 space-y-1">
                         <div className="flex items-center space-x-2">
@@ -466,10 +486,12 @@ export default function Index() {
                         </div>
                       </div>
 
-                      {/* Hover Description */}
-                      <div className="absolute left-0 right-0 top-full mt-2 p-3 bg-card/95 backdrop-blur-sm border border-primary/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                        <p className="text-sm text-foreground/90 leading-relaxed">{event.description}</p>
-                      </div>
+                      {/* Click-based Description */}
+                      {expandedEvents[event.name] && (
+                        <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
+                          <p className="text-sm text-foreground/90 leading-relaxed">{event.description}</p>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
