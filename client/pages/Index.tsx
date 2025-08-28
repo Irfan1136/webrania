@@ -505,6 +505,34 @@ export default function Index() {
             </Card>
           </div>
 
+          {/* Prizes and Certificates Section */}
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏆</span>
+                </div>
+                <h4 className="text-xl font-semibold text-neon-purple mb-3">Exciting Prizes</h4>
+                <p className="text-foreground/80 leading-relaxed">
+                  Win amazing prizes in our competitions and events! Cash prizes, certificates of merit,
+                  and recognition for outstanding performances await the winners.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-green rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🎓</span>
+                </div>
+                <h4 className="text-xl font-semibold text-neon-blue mb-3">E-Certificates</h4>
+                <p className="text-foreground/80 leading-relaxed">
+                  All participants receive digital certificates for participation! Winners get special
+                  achievement certificates. Build your portfolio with our official certifications.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
           <Card className="max-w-2xl mx-auto glow-card bg-card/50 backdrop-blur-sm border-primary/20">
             <CardContent className="text-center py-8">
               <div className="flex items-center justify-center space-x-2 mb-4">
