@@ -369,12 +369,14 @@ export default function Index() {
                   className="w-40 h-16 object-contain mx-auto"
                 />
               </div>
-              <div className="space-y-2 text-foreground/80 bg-background/20 p-4 rounded-lg mt-2.5">
-                <p>Accredited with NAAC "A" Grade</p>
-                <p>Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai</p>
-                <p className="text-lg font-medium mt-4">📍 Address:</p>
-                <p>Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</p>
-                <p>Tamilnadu, India</p>
+              <div className="bg-background/20 p-4 rounded-lg text-center">
+                <div className="space-y-2 text-foreground/80">
+                  <p>Accredited with NAAC "A" Grade</p>
+                  <p>Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai</p>
+                  <p className="text-lg font-medium mt-4">📍 Address:</p>
+                  <p>Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</p>
+                  <p>Tamilnadu, India</p>
+                </div>
               </div>
             </CardContent>
           </Card>
