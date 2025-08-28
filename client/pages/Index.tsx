@@ -117,7 +117,7 @@ export default function Index() {
             </p>
 
             <div className="text-center mb-6 p-4 rounded-lg border border-primary/20">
-              <div className="bg-background/20 p-3 rounded-lg mb-3 inline-block">
+              <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
                 <p className="text-lg md:text-xl text-primary/80 font-semibold">
                   <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
                     AL-AMEEN ENGINEERING COLLEGE
