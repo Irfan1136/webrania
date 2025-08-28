@@ -312,7 +312,7 @@ export default function Index() {
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">DHARSHAN S L</h4>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm px-3 py-1 bg-secondary/20 text-foreground rounded-full font-medium">JOINT SECRETARY</span>
+                      <span className="text-sm px-3 py-1 bg-neon-blue/20 text-neon-blue rounded-full font-medium">JOINT SECRETARY</span>
                       <a href="tel:8248784050" className="text-foreground/80 hover:text-primary transition-colors font-mono">
                         📞 8248784050
                       </a>
@@ -342,7 +342,7 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
-                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED IBRAHIM</h4>
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED IBRAHIM S</h4>
                     <div className="flex items-center justify-between">
                       <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">STAFF</span>
                       <a href="tel:9994222786" className="text-foreground/80 hover:text-primary transition-colors font-mono">
