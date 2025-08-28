@@ -372,11 +372,18 @@ export default function Index() {
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <div className="bg-background/20 p-4 rounded-lg mb-4 text-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
-                  alt="AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)"
-                  className="w-40 h-16 object-contain mx-auto"
-                />
+                <div className="flex items-center justify-center space-x-3">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                    alt="AL-AMEEN ENGINEERING COLLEGE Logo"
+                    className="w-12 h-12 object-contain"
+                  />
+                  <h3 className="text-2xl font-bold gradient-text">
+                    AL-AMEEN ENGINEERING COLLEGE
+                    <br />
+                    <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+                  </h3>
+                </div>
               </div>
               <div className="bg-background/20 p-4 rounded-lg text-center">
                 <div className="space-y-2 text-foreground/80">
@@ -425,7 +432,7 @@ export default function Index() {
                   {[
                     {
                       name: "Paper Presentation",
-                      icon: "����",
+                      icon: "📄",
                       members: "1-2 Members",
                       details: "(12-15 Slides)",
                       description: "Present your research findings, technical innovations, or emerging technology concepts through a professional presentation. Topics can cover AI/ML, blockchain, IoT, cybersecurity, software engineering, web development, mobile computing, or any cutting-edge technology. Presentations should be well-researched, technically sound, and include practical applications. Judges will evaluate based on content quality, presentation skills, technical depth, innovation, and Q&A handling. Time limit: 8-10 minutes plus 2-3 minutes for questions. Visual aids and demonstrations are encouraged."
