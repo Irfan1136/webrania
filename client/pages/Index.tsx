@@ -333,7 +333,7 @@ export default function Index() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
-                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIAYA THAHASEEN A</h4>
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIYA THAHASEEN A</h4>
                     <div className="flex items-center justify-between">
                       <span className="text-sm px-3 py-1 bg-neon-green/20 text-neon-green rounded-full font-medium">HEAD OF DEPARTMENT</span>
                       <a href="tel:8122571174" className="text-foreground/80 hover:text-primary transition-colors font-mono">
