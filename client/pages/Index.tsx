@@ -597,9 +597,13 @@ export default function Index() {
                 <span className="text-2xl">🏆</span>
                 <h3 className="text-xl font-bold">Chief Guest</h3>
               </div>
-              <p className="text-lg font-semibold gradient-text mb-6">
-                AL-AMEEN ENGINEERING COLLEGE
-              </p>
+              <div className="mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                  alt="AL-AMEEN ENGINEERING COLLEGE"
+                  className="w-32 h-12 object-contain mx-auto"
+                />
+              </div>
               <Button
                 className="bg-primary hover:bg-primary/90"
                 onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Event Registration'}
