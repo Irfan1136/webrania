@@ -2,12 +2,13 @@ import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Target, 
-  MessageSquare, 
-  Users, 
-  Code, 
-  Lightbulb, 
+import { useState } from "react";
+import {
+  Target,
+  MessageSquare,
+  Users,
+  Code,
+  Lightbulb,
   Calendar,
   TrendingUp,
   Shield,
@@ -17,7 +18,9 @@ import {
   Twitter,
   Mail,
   ChevronRight,
-  Sparkles
+  Sparkles,
+  ChevronDown,
+  ChevronUp
 } from "lucide-react";
 
 export default function Index() {
