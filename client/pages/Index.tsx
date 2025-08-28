@@ -687,9 +687,19 @@ export default function Index() {
           </div>
 
           <div className="border-t border-border/30 pt-8 text-center">
-            <p className="text-foreground/60">
-              © 2024 WEBRANIA - CSE Department Association, AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS). Building the future together.
-            </p>
+            <div className="text-center">
+              <p className="text-foreground/60 mb-2">
+                © 2024 WEBRANIA - CSE Department Association
+              </p>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                alt="AL-AMEEN ENGINEERING COLLEGE (AUTONOMOUS)"
+                className="w-24 h-6 object-contain mx-auto mb-2"
+              />
+              <p className="text-foreground/60">
+                Building the future together.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
