@@ -665,7 +665,11 @@ export default function Index() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Users className="w-4 h-4 text-primary" />
-                  <span className="text-foreground/80">AL-AMEEN ENGINEERING COLLEGE</span>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
+                    alt="AL-AMEEN ENGINEERING COLLEGE"
+                    className="w-16 h-4 object-contain"
+                  />
                 </div>
               </div>
             </div>
