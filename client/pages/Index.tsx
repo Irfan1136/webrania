@@ -98,13 +98,15 @@ export default function Index() {
               "A Association of CSE Department"
             </p>
 
-            <p className="text-lg md:text-xl text-primary/80 mb-6 font-semibold">
-              <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
-                AL-AMEEN ENGINEERING COLLEGE
-                <br />
-                <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
-              </span>
-            </p>
+            <div className="bg-background/20 p-4 rounded-lg mb-4">
+              <p className="text-lg md:text-xl text-primary/80 font-semibold">
+                <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
+                  AL-AMEEN ENGINEERING COLLEGE
+                  <br />
+                  <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+                </span>
+              </p>
+            </div>
 
             <div className="text-center mb-6 p-4 bg-background/20 rounded-lg border border-primary/20">
               <p className="text-sm text-foreground/80 mb-2">
