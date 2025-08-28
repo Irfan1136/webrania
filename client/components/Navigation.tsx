@@ -21,21 +21,18 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-2">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
+              alt="WEBRANIA Logo"
+              className="w-10 h-10 object-contain"
+            />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold gradient-text">WEBRANIA</span>
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                 alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                className="w-8 h-8 object-contain"
+                className="w-16 h-6 object-contain"
               />
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fc300dff8710a4251833c0d954fc07e32?format=webp&width=800"
-                alt="WEBRANIA Logo"
-                className="w-10 h-10 object-contain"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold gradient-text">WEBRANIA</span>
-              <span className="text-xs text-foreground/60 font-medium">AL-AMEEN ENGINEERING COLLEGE</span>
             </div>
           </div>
 
