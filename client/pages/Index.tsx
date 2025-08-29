@@ -122,7 +122,7 @@ export default function Index() {
                     className="w-[75px] h-[75px] object-contain"
                   />
                   <p className="text-lg md:text-xl text-primary/80 font-semibold mx-auto">
-                    <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
+                    <span style={{ backgroundImage: "linear-gradient(135deg, rgb(139, 92, 246) 0%, rgb(6, 182, 212) 50%, rgb(139, 92, 246) 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", fontWeight: 600 }}>
                       AL-AMEEN ENGINEERING COLLEGE
                       <br />
                       <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
