@@ -836,6 +836,7 @@ export default function Index() {
                   <span className="text-foreground/80">AL-AMEEN ENGINEERING COLLEGE</span>
                 </div>
               </div>
+              <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">Credits: WEBRANIA CSE Association</p>
             </div>
 
             <div>
