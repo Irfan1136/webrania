@@ -354,7 +354,7 @@ export default function Index() {
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED IBRAHIM S</h4>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">STAFF</span>
+                      <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                       <a href="tel:9994222786" className="text-foreground/80 hover:text-primary transition-colors font-mono">
                         📞 9994222786
                       </a>
@@ -577,6 +577,12 @@ export default function Index() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="flex justify-center mb-10">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8N9EUpRE4TWSNefQga81P6-jIXar_pekRxXoVinc6yCOn9g/viewform?usp=header" target="_blank" rel="noopener noreferrer">Register for Events</a>
+            </Button>
           </div>
 
           {/* Prizes and Certificates Section */}
