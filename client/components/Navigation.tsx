@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Code, Users, Calendar, Target, MessageSquare } from "lucide-react";
+import { useState } from "react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
