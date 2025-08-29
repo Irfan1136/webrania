@@ -411,6 +411,13 @@ export default function Index() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full font-medium">VICE PRINCIPAL</span>
+                      <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIYA THAHASEEN A</h4>
                     <div className="flex items-center justify-between">
                       <span className="text-sm px-3 py-1 bg-neon-green/20 text-neon-green rounded-full font-medium">HEAD OF DEPARTMENT</span>
