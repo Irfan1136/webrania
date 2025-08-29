@@ -26,6 +26,8 @@ import {
 export default function Index() {
   const [expandedEvents, setExpandedEvents] = useState<{[key: string]: boolean}>({});
   const [expandedTalentShow, setExpandedTalentShow] = useState(false);
+  const [showMoreMembers, setShowMoreMembers] = useState(false);
+  const [showMoreStaff, setShowMoreStaff] = useState(false);
 
   const toggleEventDescription = (eventName: string) => {
     setExpandedEvents(prev => ({
@@ -320,6 +322,80 @@ export default function Index() {
                       </a>
                     </div>
                   </div>
+
+                  {showMoreMembers && (
+                    <>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">SIDDIQ T</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">TREASURER</span>
+                          <a href="tel:7010007067" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7010007067</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">VENKATACHALAPATHI M</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">JOIN TREASURER</span>
+                          <a href="tel:9500713994" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9500713994</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHD KAIF ANSARI</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:9119827565" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9119827565</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">YUVARAJ B</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:8438917717" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8438917717</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">GAYATHRI M</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:8807744683" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8807744683</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">MD RAEES ANSARI</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:7779948751" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7779948751</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">SALAI DIVYA JOTHI S</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:6381438080" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 6381438080</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">VINUTHA S</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:9344099133" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9344099133</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">CHANDRU N</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
+                          <a href="tel:6374889570" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 6374889570</a>
+                        </div>
+                      </div>
+                    </>
+                  )}
+
+                  <div className="text-center pt-2">
+                    <Button variant="outline" size="sm" onClick={() => setShowMoreMembers(!showMoreMembers)}>
+                      {showMoreMembers ? "View less" : "View more"}
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -351,6 +427,72 @@ export default function Index() {
                         📞 9994222786
                       </a>
                     </div>
+                  </div>
+
+                  {showMoreStaff && (
+                    <>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-blue/20 text-neon-blue rounded-full font-medium">VICE PRINCIPAL</span>
+                          <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. SANGEETHA S</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:9894730667" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9894730667</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. RAMKUMAR C</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9585368444</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. VASUKI P</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:9629778223" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9629778223</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. VIJAYANANTHAN S</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:9790029701" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9790029701</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED ASLAM</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:8610165812" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8610165812</a>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. GOWTHAMI M</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. ESAI YAZHINI P</h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:9943150099" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9943150099</a>
+                        </div>
+                      </div>
+                    </>
+                  )}
+
+                  <div className="text-center pt-2">
+                    <Button variant="outline" size="sm" onClick={() => setShowMoreStaff(!showMoreStaff)}>
+                      {showMoreStaff ? "View less" : "View more"}
+                    </Button>
                   </div>
                 </div>
               </CardContent>
@@ -427,6 +569,7 @@ export default function Index() {
                       icon: "📄",
                       members: "1-2 Members",
                       details: "(12-15 Slides)",
+                      place: "Seminar Hall",
                       description: "Present your research findings, technical innovations, or emerging technology concepts through a professional presentation. Topics can cover AI/ML, blockchain, IoT, cybersecurity, software engineering, web development, mobile computing, or any cutting-edge technology. Presentations should be well-researched, technically sound, and include practical applications. Judges will evaluate based on content quality, presentation skills, technical depth, innovation, and Q&A handling. Time limit: 8-10 minutes plus 2-3 minutes for questions. Visual aids and demonstrations are encouraged."
                     },
                     {
@@ -499,6 +642,9 @@ export default function Index() {
                       {/* Click-based Description */}
                       {expandedEvents[event.name] && (
                         <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
+                          {event.place && (
+                            <p className="text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-medium">Place:</span> {event.place}</p>
+                          )}
                           <p className="text-sm text-foreground/90 leading-relaxed">{event.description}</p>
                         </div>
                       )}
