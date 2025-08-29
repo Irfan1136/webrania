@@ -101,7 +101,7 @@ export default function Index() {
 
             <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 hover:bg-primary/30">
               <Sparkles className="w-4 h-4 mr-2" />
-              INAUGURATION FUNCTION
+              WEBRANIA
             </Badge>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
@@ -307,7 +307,7 @@ export default function Index() {
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHAMED IRFAN M</h4>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">SECRETARY</span>
+                      <span className="text-sm px-3 py-1 rounded-full font-medium" style={{ backgroundColor: "rgba(207, 57, 55, 0.2)", color: "rgba(224, 52, 110, 1)", border: "1px solid rgba(236, 146, 43, 1)", marginTop: "10px" }}>SECRETARY</span>
                       <a href="tel:7598659947" className="text-foreground/80 hover:text-primary transition-colors font-mono">
                         📞 7598659947
                       </a>
@@ -410,13 +410,6 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10 mt-4">
-                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full font-medium">VICE PRINCIPAL</span>
-                      <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
-                    </div>
-                  </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIYA THAHASEEN A</h4>
                     <div className="flex items-center justify-between">
@@ -525,9 +518,7 @@ export default function Index() {
               </div>
               <div className="bg-background/20 p-4 rounded-lg text-center">
                 <div className="space-y-2 text-foreground/80">
-                  <p>Accredited with NAAC "A" Grade</p>
-                  <p>Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai</p>
-                  <p className="text-lg font-medium mt-4">📍 Address:</p>
+                  <a href="https://share.google/0ZOtblzeA2m5w55yf" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium">LOCATION:</a>
                   <p>Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</p>
                   <p>Tamilnadu, India</p>
                 </div>
@@ -589,6 +580,7 @@ export default function Index() {
                       icon: "🐛",
                       members: "1-2 Members",
                       details: "",
+                      place: "CC2",
                       description: "Test your analytical and problem-solving skills by identifying, analyzing, and fixing logical errors, syntax errors, and runtime issues in provided code snippets. Programming languages may include C, C++, Java, Python, JavaScript, or pseudo-code. Participants will receive code samples with intentional bugs and must provide corrected versions with explanations. Types of errors include infinite loops, memory leaks, incorrect algorithms, wrong data structures, improper variable usage, and logical mistakes. Time limit: 45-60 minutes. Points awarded for correct identification, proper fixes, and clear explanations of the debugging process."
                     },
                     {
@@ -596,6 +588,7 @@ export default function Index() {
                       icon: "🧠",
                       members: "1-2 Members",
                       details: "",
+                      place: "CC2",
                       description: "Comprehensive knowledge test covering computer science fundamentals, programming concepts, current technology trends, and industry awareness. Topics include data structures & algorithms, operating systems, database management, computer networks, software engineering, object-oriented programming, web technologies, mobile development, artificial intelligence, machine learning, cybersecurity, cloud computing, and latest tech news. Question formats include multiple choice, fill-in-the-blanks, true/false, and short answers. Rapid-fire rounds test quick thinking. Total questions: 50-75. Time limit: 60-90 minutes. Bonus points for innovative answers and real-world applications."
                     },
                     {
@@ -603,6 +596,7 @@ export default function Index() {
                       icon: "🎨",
                       members: "Individual",
                       details: "",
+                      place: "CC1",
                       description: "Design creative and informative posters on cutting-edge technical topics, combining artistic creativity with technical accuracy. Themes can include emerging technologies, future of computing, digital transformation, tech innovations, environmental technology, or social impact of technology. Posters should be visually appealing, well-researched, informative, and technically accurate. Use of graphics, charts, infographics, and creative layouts is encouraged. Size: A1 or A2 format. Evaluation based on creativity, technical content, visual appeal, originality, research quality, and message clarity. Digital tools or hand-drawing both accepted. Time limit: 2-3 hours for on-spot creation."
                     }
                   ].map((event, index) => (
@@ -792,12 +786,7 @@ export default function Index() {
               <div className="flex flex-col">
                 <span className="text-xl font-bold gradient-text">WEBRANIA</span>
                 <div className="flex items-center space-x-1">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
-                    alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-4 h-4 object-contain"
-                  />
-                  <span className="text-sm text-foreground/60">CSE Department Association</span>
+                  <span className="text-sm text-foreground/60">A CSE Department Association</span>
                 </div>
               </div>
             </div>
