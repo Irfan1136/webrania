@@ -847,7 +847,7 @@ export default function Index() {
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <p className="text-foreground/60">
-                  © 2024 WEBRANIA - CSE Department Association,
+                  �� 2024 WEBRANIA - CSE Department Association,
                 </p>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
@@ -861,7 +861,6 @@ export default function Index() {
               <p className="text-foreground/60">
                 Building the future together.
               </p>
-              <p className="text-foreground/60 mt-2">Credits: WEBRANIA CSE Association</p>
             </div>
           </div>
         </div>
