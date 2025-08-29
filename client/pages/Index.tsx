@@ -392,7 +392,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" onClick={() => setShowMoreMembers(!showMoreMembers)}>
+                    <Button variant="outline" size="sm" type="button" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreMembers(!showMoreMembers); }}>
                       {showMoreMembers ? "View less" : "View more"}
                     </Button>
                   </div>
