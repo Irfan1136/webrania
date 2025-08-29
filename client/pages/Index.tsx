@@ -119,7 +119,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-8 h-8 object-contain"
+                    className="w-12 h-12 object-contain"
                   />
                   <p className="text-lg md:text-xl text-primary/80 font-semibold">
                     <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
@@ -328,14 +328,14 @@ export default function Index() {
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">SIDDIQ T</h4>
                         <div className="flex items-center justify-between">
-                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">TREASURER</span>
+                          <span className="text-sm px-3 py-1 rounded-full font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-400/80">TREASURER</span>
                           <a href="tel:7010007067" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7010007067</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">VENKATACHALAPATHI M</h4>
                         <div className="flex items-center justify-between">
-                          <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">JOIN TREASURER</span>
+                          <span className="text-sm px-3 py-1 rounded-full font-medium bg-blue-600/20 text-blue-400 border border-violet-600">JOIN TREASURER</span>
                           <a href="tel:9500713994" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9500713994</a>
                         </div>
                       </div>
@@ -410,22 +410,25 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10 mt-4">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full font-medium">VICE PRINCIPAL</span>
+                      <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
+                    </div>
+                  </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIYA THAHASEEN A</h4>
                     <div className="flex items-center justify-between">
                       <span className="text-sm px-3 py-1 bg-neon-green/20 text-neon-green rounded-full font-medium">HEAD OF DEPARTMENT</span>
-                      <a href="tel:8122571174" className="text-foreground/80 hover:text-primary transition-colors font-mono">
-                        📞 8122571174
-                      </a>
+                      <a href="tel:8122571174" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8122571174</a>
                     </div>
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED IBRAHIM S</h4>
                     <div className="flex items-center justify-between">
                       <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
-                      <a href="tel:9994222786" className="text-foreground/80 hover:text-primary transition-colors font-mono">
-                        📞 9994222786
-                      </a>
+                      <a href="tel:9994222786" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9994222786</a>
                     </div>
                   </div>
 
@@ -569,7 +572,7 @@ export default function Index() {
                       icon: "📄",
                       members: "1-2 Members",
                       details: "(12-15 Slides)",
-                      place: "Seminar Hall",
+                      place: "SEMINAR HALL",
                       description: "Present your research findings, technical innovations, or emerging technology concepts through a professional presentation. Topics can cover AI/ML, blockchain, IoT, cybersecurity, software engineering, web development, mobile computing, or any cutting-edge technology. Presentations should be well-researched, technically sound, and include practical applications. Judges will evaluate based on content quality, presentation skills, technical depth, innovation, and Q&A handling. Time limit: 8-10 minutes plus 2-3 minutes for questions. Visual aids and demonstrations are encouraged."
                     },
                     {
@@ -577,6 +580,7 @@ export default function Index() {
                       icon: "💻",
                       members: "3-4 Members",
                       details: "",
+                      place: "AUDITORIUM",
                       description: "Showcase your completed software/hardware projects with live demonstrations. Projects can include web applications, mobile apps, desktop software, embedded systems, IoT devices, games, or any innovative technical solution. Teams must present the problem statement, solution approach, technical architecture, implementation details, challenges faced, and future enhancements. Demonstration of working prototype is mandatory. Evaluation criteria include innovation, technical complexity, user interface, functionality, code quality, teamwork, and presentation clarity. Time limit: 12-15 minutes including demo and Q&A."
                     },
                     {
@@ -643,7 +647,7 @@ export default function Index() {
                       {expandedEvents[event.name] && (
                         <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
                           {event.place && (
-                            <p className="text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-medium">Place:</span> {event.place}</p>
+                            <p className="text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-bold">PLACE:</span> {event.place}</p>
                           )}
                           <p className="text-sm text-foreground/90 leading-relaxed">{event.description}</p>
                         </div>
