@@ -322,16 +322,16 @@ export default function Index() {
                       </a>
                     </div>
                   </div>
+                  <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                    <h4 className="font-semibold text-lg text-foreground/90 mb-2">SIDDIQ T</h4>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm px-3 py-1 rounded-full font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-400/80">TREASURER</span>
+                      <a href="tel:7010007067" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7010007067</a>
+                    </div>
+                  </div>
 
                   {showMoreMembers && (
                     <>
-                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
-                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">SIDDIQ T</h4>
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm px-3 py-1 rounded-full font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-400/80">TREASURER</span>
-                          <a href="tel:7010007067" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7010007067</a>
-                        </div>
-                      </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">VENKATACHALAPATHI M</h4>
                         <div className="flex items-center justify-between">
@@ -480,6 +480,7 @@ export default function Index() {
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. GOWTHAMI M</h4>
                         <div className="flex items-center justify-between">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
+                          <a href="tel:8608531908" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8608531908</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
@@ -614,7 +615,8 @@ export default function Index() {
                         <Button
                           variant="ghost"
                           size="sm"
-                          onClick={() => toggleEventDescription(event.name)}
+                          type="button"
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleEventDescription(event.name); }}
                           className="h-6 px-2 text-xs"
                         >
                           {expandedEvents[event.name] ? (
@@ -680,7 +682,8 @@ export default function Index() {
                       <Button
                         variant="ghost"
                         size="sm"
-                        onClick={() => setExpandedTalentShow(!expandedTalentShow)}
+                        type="button"
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); setExpandedTalentShow(!expandedTalentShow); }}
                         className="h-6 px-2 text-xs"
                       >
                         {expandedTalentShow ? (
@@ -771,12 +774,6 @@ export default function Index() {
                   AL-AMEEN ENGINEERING COLLEGE
                 </p>
               </div>
-              <Button
-                className="bg-primary hover:bg-primary/90"
-                onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Event Registration'}
-              >
-                Register for Events
-              </Button>
             </CardContent>
           </Card>
         </div>
@@ -875,6 +872,7 @@ export default function Index() {
               <p className="text-foreground/60">
                 Building the future together.
               </p>
+              <p className="text-foreground/60 mt-2">Credits: WEBRANIA CSE Association</p>
             </div>
           </div>
         </div>
