@@ -119,7 +119,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-12 h-12 object-contain"
+                    className="w-[50px] h-[50px] object-contain"
                   />
                   <p className="text-lg md:text-xl text-primary/80 font-semibold">
                     <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
@@ -514,7 +514,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-12 h-12 object-contain"
+                    className="w-[50px] h-[50px] object-contain"
                   />
                   <h3 className="text-2xl font-bold gradient-text">
                     AL-AMEEN ENGINEERING COLLEGE
