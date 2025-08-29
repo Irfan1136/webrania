@@ -119,9 +119,9 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-[50px] h-[50px] object-contain"
+                    className="w-[75px] h-[75px] object-contain"
                   />
-                  <p className="text-lg md:text-xl text-primary/80 font-semibold">
+                  <p className="text-lg md:text-xl text-primary/80 font-semibold mx-auto">
                     <span style={{color: "rgba(82, 177, 224, 0.8)"}}>
                       AL-AMEEN ENGINEERING COLLEGE
                       <br />
@@ -507,17 +507,17 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-[50px] h-[50px] object-contain"
+                    className="w-[75px] h-[75px] object-contain"
                   />
-                  <h3 className="text-2xl font-bold gradient-text">
+                  <h3 className="text-2xl font-bold gradient-text mx-auto">
                     AL-AMEEN ENGINEERING COLLEGE
                     <br />
                     <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
                   </h3>
                 </div>
               </div>
-              <div className="bg-background/20 p-4 rounded-lg text-center">
-                <div className="space-y-2 text-foreground/80">
+              <div className="bg-background/20 p-4 rounded-lg text-center flex flex-col">
+                <div className="space-y-2 text-foreground/80 mx-auto">
                   <a href="https://share.google/0ZOtblzeA2m5w55yf" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium">LOCATION:</a>
                   <p>Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</p>
                   <p>Tamilnadu, India</p>
