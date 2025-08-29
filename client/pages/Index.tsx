@@ -146,14 +146,6 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 glow-border text-lg px-8 py-6"
-                onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join WEBRANIA Community'}
-              >
-                Join Our Community
-                <ChevronRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button
-                size="lg"
                 variant="outline"
                 className="text-lg px-8 py-6 border-primary/30 hover:bg-primary/10"
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}

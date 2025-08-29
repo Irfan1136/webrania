@@ -52,15 +52,6 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button
-              className="bg-primary hover:bg-primary/90 glow-border"
-              onClick={() => window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join WEBRANIA Community'}
-            >
-              Join Community
-            </Button>
-          </div>
 
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
