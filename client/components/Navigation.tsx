@@ -1,10 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Menu, Code, Users, Calendar, Target, MessageSquare } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState<string>("#home");
+
+  useEffect(() => {
+    const ids = ["home", "about", "vision", "mission", "contact", "events"];
+    const sections = ids
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => !!el);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible[0]) {
+          setActiveHref(`#${visible[0].target.id}`);
+        }
+      },
+      { root: null, rootMargin: "0px 0px -60% 0px", threshold: [0.25, 0.5, 0.75, 1] },
+    );
+
+    sections.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   const navItems = [
     { name: "Home", href: "#home", icon: Code },
@@ -45,7 +68,13 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                aria-current={activeHref === item.href ? "page" : undefined}
+                className={
+                  "transition-colors duration-200 font-medium " +
+                  (activeHref === item.href
+                    ? "text-primary border-b-2 border-primary"
+                    : "text-foreground/80 hover:text-primary")
+                }
               >
                 {item.name}
               </a>
@@ -65,12 +94,17 @@ export default function Navigation() {
               <div className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => {
                   const Icon = item.icon;
+                  const isActive = activeHref === item.href;
                   return (
                     <a
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="flex items-center space-x-3 text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                      aria-current={isActive ? "page" : undefined}
+                      className={
+                        "flex items-center space-x-3 transition-colors duration-200 font-medium " +
+                        (isActive ? "text-primary" : "text-foreground/80 hover:text-primary")
+                      }
                     >
                       <Icon className="w-5 h-5" />
                       <span>{item.name}</span>
