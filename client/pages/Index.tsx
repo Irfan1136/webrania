@@ -541,7 +541,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8">
             {/* Technical Events */}
             <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
               <CardHeader className="text-center">
