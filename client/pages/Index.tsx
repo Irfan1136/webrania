@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Target,
   MessageSquare,
@@ -28,6 +28,25 @@ export default function Index() {
   const [expandedTalentShow, setExpandedTalentShow] = useState(false);
   const [showMoreMembers, setShowMoreMembers] = useState(false);
   const [showMoreStaff, setShowMoreStaff] = useState(false);
+
+  // Prevent hash anchor jumps; smooth-scroll instead
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const target = e.target as HTMLElement | null;
+      const anchor = target?.closest('a[href^="#"]') as HTMLAnchorElement | null;
+      if (!anchor) return;
+      const href = anchor.getAttribute('href') || '';
+      // Ignore tel:, mailto:, external, and form buttons
+      if (href === '#' || href.startsWith('#')) {
+        e.preventDefault();
+        e.stopPropagation();
+        const id = href.slice(1);
+        if (id) document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+    document.addEventListener('click', handler, true);
+    return () => document.removeEventListener('click', handler, true);
+  }, []);
 
   const toggleEventDescription = (eventName: string) => {
     setExpandedEvents(prev => ({
