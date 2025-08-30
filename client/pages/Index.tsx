@@ -108,7 +108,7 @@ export default function Index() {
       {/* Hero Section */}
       <section id="home" className="relative overflow-hidden pt-16">
         <div className="absolute inset-0 grid-bg opacity-30"></div>
-        <div className="relative container mx-auto px-4 lg:px-8 py-20 lg:py-32">
+        <div className="relative container mx-auto px-4 lg:px-8 py-12 md:py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <img
@@ -123,12 +123,12 @@ export default function Index() {
               WEBRANIA
             </Badge>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
               Welcome to{" "}
               <span className="gradient-text glow-text">WEBRANIA</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-primary/80 mb-4 font-semibold">
+            <p className="text-base md:text-xl text-primary/80 mb-4 font-semibold">
               "A Association of CSE Department"
             </p>
 
@@ -177,7 +177,7 @@ export default function Index() {
       </section>
 
       {/* Vision Section */}
-      <section id="vision" className="py-20 lg:py-32 relative">
+      <section id="vision" className="py-12 md:py-20 lg:py-32 relative">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-blue/20 text-neon-blue border-neon-blue/30">
@@ -207,7 +207,7 @@ export default function Index() {
       </section>
 
       {/* Mission Section */}
-      <section id="mission" className="py-20 lg:py-32 bg-card/30">
+      <section id="mission" className="py-12 md:py-20 lg:py-32 bg-card/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-purple/20 text-neon-purple border-neon-purple/30">
@@ -246,7 +246,7 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 lg:py-32">
+      <section id="about" className="py-12 md:py-20 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-green/20 text-neon-green border-neon-green/30">
@@ -293,7 +293,7 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 lg:py-32">
+      <section id="contact" className="py-12 md:py-20 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-blue/20 text-neon-blue border-neon-blue/30">
@@ -404,7 +404,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreMembers(!showMoreMembers); (e.currentTarget as HTMLButtonElement).blur(); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); setShowMoreMembers(!showMoreMembers); (e.currentTarget as HTMLButtonElement).blur(); }}>
                       {showMoreMembers ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -506,7 +506,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreStaff(!showMoreStaff); (e.currentTarget as HTMLButtonElement).blur(); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); setShowMoreStaff(!showMoreStaff); (e.currentTarget as HTMLButtonElement).blur(); }}>
                       {showMoreStaff ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -545,7 +545,7 @@ export default function Index() {
       </section>
 
       {/* Events Section */}
-      <section id="events" className="py-20 lg:py-32 bg-card/30">
+      <section id="events" className="py-12 md:py-20 lg:py-32 bg-card/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30">
@@ -632,7 +632,7 @@ export default function Index() {
                           onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleEventDescription(event.name); (e.currentTarget as HTMLButtonElement).blur(); }}
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); toggleEventDescription(event.name); (e.currentTarget as HTMLButtonElement).blur(); }}
                           className="h-6 px-2 text-xs"
                         >
                           {expandedEvents[event.name] ? (
@@ -705,7 +705,7 @@ export default function Index() {
                         onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); setExpandedTalentShow(!expandedTalentShow); (e.currentTarget as HTMLButtonElement).blur(); }}
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); setExpandedTalentShow(!expandedTalentShow); (e.currentTarget as HTMLButtonElement).blur(); }}
                         className="h-6 px-2 text-xs"
                       >
                         {expandedTalentShow ? (
