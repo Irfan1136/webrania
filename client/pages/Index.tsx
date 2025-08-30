@@ -295,7 +295,7 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-2xl gradient-text">Association Members</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHAMED IRFAN M</h4>
@@ -401,7 +401,7 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-2xl gradient-text">Staff In Charge</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
@@ -553,7 +553,7 @@ export default function Index() {
                   Showcase your technical prowess and problem-solving skills
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
                 <div className="space-y-4">
                   {[
                     {
@@ -646,9 +646,9 @@ export default function Index() {
                       {expandedEvents[event.name] && (
                         <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
                           {event.place && (
-                            <p className="text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-bold">PLACE:</span> {event.place}</p>
+                            <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-bold">PLACE:</span> {event.place}</p>
                           )}
-                          <p className="text-sm text-foreground/90 leading-relaxed">{event.description}</p>
+                          <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">{event.description}</p>
                         </div>
                       )}
                     </div>
@@ -668,7 +668,7 @@ export default function Index() {
                   Express your creativity and showcase your diverse talents
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
                 <div className="space-y-4">
                   <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
                     <div className="flex items-center justify-between mb-2">
@@ -711,7 +711,7 @@ export default function Index() {
                     {/* Click-based Description */}
                     {expandedTalentShow && (
                       <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
-                        <p className="text-sm text-foreground/90 leading-relaxed">
+                        <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
                           Express your unique individual talents and creativity! Accepted performances include: vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any other creative solo performance. Group dance is strictly prohibited, but all other individual talents are welcomed and encouraged. Time limit: 3-5 minutes per performance. Participants may use backing tracks or instrumental music. Evaluation criteria include creativity, stage presence, audience engagement, technical skill, and entertainment value. Prizes for most creative, most entertaining, and best overall performance!
                         </p>
                       </div>
