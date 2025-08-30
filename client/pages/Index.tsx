@@ -385,7 +385,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreMembers(!showMoreMembers); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreMembers(!showMoreMembers); (e.currentTarget as HTMLButtonElement).blur(); }}>
                       {showMoreMembers ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -487,7 +487,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreStaff(!showMoreStaff); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreStaff(!showMoreStaff); (e.currentTarget as HTMLButtonElement).blur(); }}>
                       {showMoreStaff ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -549,7 +549,7 @@ export default function Index() {
                   <Code className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-2xl gradient-text">Technical Events</CardTitle>
-                <CardDescription className="text-foreground/80">
+                <CardDescription className="text-sm sm:text-base text-foreground/80">
                   Showcase your technical prowess and problem-solving skills
                 </CardDescription>
               </CardHeader>
@@ -601,16 +601,19 @@ export default function Index() {
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center space-x-3">
                           <span className="text-2xl">{event.icon}</span>
-                          <span className="font-medium text-foreground/90">{event.name}</span>
+                          <span className="text-sm sm:text-base font-medium text-foreground/90">{event.name}</span>
                         </div>
                         <Button
                           variant="ghost"
                           size="sm"
                           type="button"
                           onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                          onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleEventDescription(event.name); }}
+                          onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                          onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleEventDescription(event.name); (e.currentTarget as HTMLButtonElement).blur(); }}
                           className="h-6 px-2 text-xs"
                         >
                           {expandedEvents[event.name] ? (
@@ -661,7 +664,7 @@ export default function Index() {
                   <Heart className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-2xl gradient-text">Non-Technical Events</CardTitle>
-                <CardDescription className="text-foreground/80">
+                <CardDescription className="text-sm sm:text-base text-foreground/80">
                   Express your creativity and showcase your diverse talents
                 </CardDescription>
               </CardHeader>
@@ -678,9 +681,12 @@ export default function Index() {
                         size="sm"
                         type="button"
                         onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                        onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); setExpandedTalentShow(!expandedTalentShow); }}
+                        onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                        onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); setExpandedTalentShow(!expandedTalentShow); (e.currentTarget as HTMLButtonElement).blur(); }}
                         className="h-6 px-2 text-xs"
                       >
                         {expandedTalentShow ? (
