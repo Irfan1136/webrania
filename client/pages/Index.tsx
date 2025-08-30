@@ -306,7 +306,7 @@ export default function Index() {
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHAMED IRFAN M</h4>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 rounded-full font-medium" style={{ backgroundColor: "rgba(207, 57, 55, 0.2)", color: "rgba(224, 52, 110, 1)", border: "1px solid rgba(236, 146, 43, 1)", marginTop: "10px" }}>SECRETARY</span>
                       <a href="tel:7598659947" className="text-foreground/80 hover:text-primary transition-colors font-mono">
                         📞 7598659947
@@ -315,7 +315,7 @@ export default function Index() {
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">DHARSHAN S L</h4>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 bg-neon-blue/20 text-neon-blue rounded-full font-medium">JOINT SECRETARY</span>
                       <a href="tel:8248784050" className="text-foreground/80 hover:text-primary transition-colors font-mono">
                         📞 8248784050
@@ -324,7 +324,7 @@ export default function Index() {
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">SIDDIQ T</h4>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 rounded-full font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-400/80">TREASURER</span>
                       <a href="tel:7010007067" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7010007067</a>
                     </div>
@@ -334,56 +334,56 @@ export default function Index() {
                     <>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">VENKATACHALAPATHI M</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 rounded-full font-medium bg-blue-600/20 text-blue-400 border border-violet-600">JOIN TREASURER</span>
                           <a href="tel:9500713994" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9500713994</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHD KAIF ANSARI</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:9119827565" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9119827565</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">YUVARAJ B</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:8438917717" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8438917717</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">GAYATHRI M</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:8807744683" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8807744683</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">MD RAEES ANSARI</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:7779948751" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 7779948751</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">SALAI DIVYA JOTHI S</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:6381438080" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 6381438080</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">VINUTHA S</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:9344099133" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9344099133</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">CHANDRU N</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">EXECUTIVE MEMBER</span>
                           <a href="tel:6374889570" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 6374889570</a>
                         </div>
@@ -412,21 +412,21 @@ export default function Index() {
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full font-medium">VICE PRINCIPAL</span>
                       <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
                     </div>
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. AAFIYA THAHASEEN A</h4>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 bg-neon-green/20 text-neon-green rounded-full font-medium">HEAD OF DEPARTMENT</span>
                       <a href="tel:8122571174" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8122571174</a>
                     </div>
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED IBRAHIM S</h4>
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                       <a href="tel:9994222786" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9994222786</a>
                     </div>
@@ -436,56 +436,56 @@ export default function Index() {
                     <>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-blue/20 text-neon-blue rounded-full font-medium">VICE PRINCIPAL</span>
                           <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. SANGEETHA S</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:9894730667" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9894730667</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. RAMKUMAR C</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9585368444</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. VASUKI P</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:9629778223" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9629778223</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. VIJAYANANTHAN S</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:9790029701" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9790029701</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. MOHAMMED ASLAM</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:8610165812" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8610165812</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. GOWTHAMI M</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:8608531908" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 8608531908</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. ESAI YAZHINI P</h4>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:9943150099" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9943150099</a>
                         </div>
@@ -836,7 +836,7 @@ export default function Index() {
                   <span className="text-foreground/80">AL-AMEEN ENGINEERING COLLEGE</span>
                 </div>
               </div>
-              <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">Credits: WEBRANIA CSE Association</p>
+              <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">⭐ Credits: WEBRANIA CSE Association</p>
             </div>
 
             <div>
@@ -855,7 +855,7 @@ export default function Index() {
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <p className="text-foreground/60">
-                  �� 2024 WEBRANIA - CSE Department Association,
+                  © 2024 WEBRANIA - CSE Department Association,
                 </p>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
