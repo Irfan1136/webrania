@@ -35,8 +35,17 @@ export default function Index() {
     (e?.nativeEvent?.stopImmediatePropagation?.());
     const x = window.scrollX;
     const y = window.scrollY;
+    const root = document.documentElement;
+    const prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
     action();
-    requestAnimationFrame(() => window.scrollTo(x, y));
+    requestAnimationFrame(() => {
+      window.scrollTo({ left: x, top: y, behavior: 'auto' });
+      requestAnimationFrame(() => {
+        window.scrollTo({ left: x, top: y, behavior: 'auto' });
+        root.style.scrollBehavior = prev || '';
+      });
+    });
   };
 
   // Prevent hash anchor jumps; smooth-scroll instead
