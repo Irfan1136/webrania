@@ -734,7 +734,7 @@ export default function Index() {
           </div>
 
           {/* Prizes and Certificates Section */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8">
             <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
