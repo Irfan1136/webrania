@@ -115,11 +115,11 @@ export default function Index() {
 
             <div className="text-center mb-6 p-4 rounded-lg border border-primary/20">
               <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
-                <div className="flex items-center justify-center space-x-3 mb-2">
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-3 space-y-2 sm:space-y-0 mb-2">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-[75px] h-[75px] object-contain"
+                    className="w-12 h-12 sm:w-[75px] sm:h-[75px] object-contain"
                   />
                   <p className="text-lg md:text-xl text-primary/80 font-semibold mx-auto">
                     <span style={{ backgroundImage: "linear-gradient(135deg, rgb(139, 92, 246) 0%, rgb(6, 182, 212) 50%, rgb(139, 92, 246) 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", fontWeight: 600 }}>
@@ -502,12 +502,12 @@ export default function Index() {
               <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
-              <div className="bg-background/20 p-4 rounded-lg mb-4 text-center">
-                <div className="flex items-center justify-center space-x-3">
+              <div className="p-4 mb-4 text-center">
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-3 space-y-2 sm:space-y-0">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-[100px] h-[100px] object-contain"
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-[100px] md:h-[100px] object-contain"
                   />
                   <h3 className="text-2xl font-bold gradient-text mx-auto">
                     AL-AMEEN ENGINEERING COLLEGE
