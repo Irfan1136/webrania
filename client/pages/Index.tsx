@@ -295,7 +295,7 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-2xl gradient-text">Association Members</CardTitle>
               </CardHeader>
-              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
+              <CardContent>
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHAMED IRFAN M</h4>
@@ -401,7 +401,7 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-2xl gradient-text">Staff In Charge</CardTitle>
               </CardHeader>
-              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
+              <CardContent>
                 <div className="space-y-4">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
@@ -553,7 +553,7 @@ export default function Index() {
                   Showcase your technical prowess and problem-solving skills
                 </CardDescription>
               </CardHeader>
-              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
+              <CardContent>
                 <div className="space-y-4">
                   {[
                     {
@@ -668,7 +668,7 @@ export default function Index() {
                   Express your creativity and showcase your diverse talents
                 </CardDescription>
               </CardHeader>
-              <CardContent onClickCapture={(e) => { const t = e.target as HTMLElement; if (t && t.closest('button')) { e.preventDefault(); e.stopPropagation(); } }}>
+              <CardContent>
                 <div className="space-y-4">
                   <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
                     <div className="flex items-center justify-between mb-2">
