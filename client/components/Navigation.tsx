@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Menu, Code, Users, Calendar, Target, MessageSquare } from "lucide-react";
 
 export default function Navigation() {
@@ -61,6 +61,7 @@ export default function Navigation() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-80 bg-card border-border">
+              <SheetHeader><SheetTitle className="sr-only">Mobile Menu</SheetTitle></SheetHeader>
               <div className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => {
                   const Icon = item.icon;
