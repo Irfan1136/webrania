@@ -568,6 +568,12 @@ export default function Index() {
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
               Participate in technical and non-technical events designed to enhance your skills and showcase your talents
             </p>
+            <div className="mt-3 flex justify-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-pink/20 text-neon-pink border border-neon-pink/30 shadow">
+                <Calendar className="w-4 h-4" />
+                <span className="text-sm sm:text-base font-semibold tracking-wide uppercase">Event Date: SEPT 11, 2025</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8">
