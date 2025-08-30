@@ -125,18 +125,12 @@ export default function Index() {
                     <span style={{ backgroundImage: "linear-gradient(135deg, rgb(139, 92, 246) 0%, rgb(6, 182, 212) 50%, rgb(139, 92, 246) 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", fontWeight: 600 }}>
                       AL-AMEEN ENGINEERING COLLEGE
                       <br />
-                      <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+                      <div style={{ display: "inline", fontSize: "15px", fontWeight: 600 }}>&nbsp;(AUTONOMOUS)</div>
                     </span>
+                    <div className="text-sm text-foreground/80 mb-2">Accredited with NAAC "A" Grade</div>
+                    <div className="text-sm text-foreground/70">Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai</div>
                   </p>
                 </div>
-              </div>
-              <div className="bg-background/20 p-3 rounded-lg mb-1 inline-block">
-                <p className="text-sm text-foreground/80 mb-2">
-                  Accredited with NAAC "A" Grade
-                </p>
-                <p className="text-sm text-foreground/70">
-                  Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai
-                </p>
               </div>
             </div>
             
@@ -148,8 +142,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 size="lg"
-                variant="outline"
-                className="text-lg px-8 py-6 border-primary/30 hover:bg-primary/10"
+                className="text-lg px-8 py-6 bg-[#3762e5] hover:bg-[#3762e5]/90 text-white border-transparent"
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
@@ -514,20 +507,17 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                    className="w-[75px] h-[75px] object-contain"
+                    className="w-[100px] h-[100px] object-contain"
                   />
                   <h3 className="text-2xl font-bold gradient-text mx-auto">
                     AL-AMEEN ENGINEERING COLLEGE
                     <br />
-                    <span style={{fontSize: "15px"}}>&nbsp;(AUTONOMOUS)</span>
+                    <span style={{ fontSize: "15px", fontWeight: 700 }}>&nbsp;(AUTONOMOUS)</span>
+                    <div className="text-foreground/80 font-normal mx-auto">
+                      <div className="mt-2">Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</div>
+                      <div className="mt-2">Tamilnadu, India</div>
+                    </div>
                   </h3>
-                </div>
-              </div>
-              <div className="bg-background/20 p-4 rounded-lg text-center flex flex-col">
-                <div className="space-y-2 text-foreground/80 mx-auto">
-                  <a href="https://share.google/0ZOtblzeA2m5w55yf" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium">LOCATION:</a>
-                  <p>Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</p>
-                  <p>Tamilnadu, India</p>
                 </div>
               </div>
             </CardContent>
