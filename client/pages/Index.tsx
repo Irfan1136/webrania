@@ -385,7 +385,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreMembers(!showMoreMembers); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreMembers(!showMoreMembers); }}>
                       {showMoreMembers ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -487,7 +487,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreStaff(!showMoreStaff); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMoreStaff(!showMoreStaff); }}>
                       {showMoreStaff ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -607,7 +607,9 @@ export default function Index() {
                           variant="ghost"
                           size="sm"
                           type="button"
+                          onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                          onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleEventDescription(event.name); }}
                           className="h-6 px-2 text-xs"
                         >
@@ -675,7 +677,9 @@ export default function Index() {
                         variant="ghost"
                         size="sm"
                         type="button"
+                        onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                        onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onClick={(e) => { e.preventDefault(); e.stopPropagation(); setExpandedTalentShow(!expandedTalentShow); }}
                         className="h-6 px-2 text-xs"
                       >
@@ -845,7 +849,7 @@ export default function Index() {
 
           <div className="border-t border-border/30 pt-8 text-center">
             <div className="text-center">
-              <div className="flex items-center justify-center space-x-2 mb-2">
+              <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-2 space-y-1 sm:space-y-0 mb-2">
                 <p className="text-foreground/60">
                   © 2024 WEBRANIA - CSE Department Association,
                 </p>
