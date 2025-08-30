@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
@@ -773,7 +774,7 @@ export default function Index() {
             <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏆</span>
+                  <span className="text-2xl">��</span>
                 </div>
                 <h4 className="text-xl font-semibold text-neon-purple mb-3">Exciting Prizes</h4>
                 <p className="text-foreground/80 leading-relaxed">
@@ -879,11 +880,11 @@ export default function Index() {
             <div>
               <h4 className="font-semibold text-lg mb-3 gradient-text">Quick Links</h4>
               <div className="space-y-2">
-                <a href="#about" className="block text-foreground/80 hover:text-primary transition-colors">About</a>
-                <a href="#vision" className="block text-foreground/80 hover:text-primary transition-colors">Vision</a>
-                <a href="#mission" className="block text-foreground/80 hover:text-primary transition-colors">Mission</a>
-                <a href="#contact" className="block text-foreground/80 hover:text-primary transition-colors">Contact</a>
-                <a href="#events" className="block text-foreground/80 hover:text-primary transition-colors">Events</a>
+                <button type="button" onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="block text-left text-foreground/80 hover:text-primary transition-colors">About</button>
+                <button type="button" onClick={() => document.getElementById('vision')?.scrollIntoView({ behavior: 'smooth' })} className="block text-left text-foreground/80 hover:text-primary transition-colors">Vision</button>
+                <button type="button" onClick={() => document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })} className="block text-left text-foreground/80 hover:text-primary transition-colors">Mission</button>
+                <button type="button" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="block text-left text-foreground/80 hover:text-primary transition-colors">Contact</button>
+                <button type="button" onClick={() => document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })} className="block text-left text-foreground/80 hover:text-primary transition-colors">Events</button>
               </div>
             </div>
           </div>
