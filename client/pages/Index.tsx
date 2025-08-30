@@ -513,7 +513,7 @@ export default function Index() {
                     AL-AMEEN ENGINEERING COLLEGE
                     <br />
                     <span style={{ fontSize: "15px", fontWeight: 700 }}>&nbsp;(AUTONOMOUS)</span>
-                    <div className="text-foreground/80 font-normal">
+                    <div className="text-foreground/80 font-normal text-sm sm:text-base">
                       <div className="mt-2">Karundevanpalayam, Nanjai Uthukkuli Post, Erode - 638 104</div>
                       <div className="mt-2">Tamilnadu, India</div>
                     </div>
