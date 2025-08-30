@@ -107,8 +107,11 @@
 
   html {
     @apply bg-background text-foreground;
-    scroll-behavior: smooth;
+    /* Use programmatic smooth scrolling only where intended */
   }
+
+  /* Prevent browser scroll anchoring from causing jumps when content expands/collapses */
+  html, body { overflow-anchor: none; }
 
   body {
     @apply bg-background text-foreground antialiased;
