@@ -65,9 +65,13 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                }}
                 aria-current={activeHref === item.href ? "page" : undefined}
                 className={
                   "transition-colors duration-200 font-medium " +
@@ -77,7 +81,7 @@ export default function Navigation() {
                 }
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
 
@@ -96,10 +100,14 @@ export default function Navigation() {
                   const Icon = item.icon;
                   const isActive = activeHref === item.href;
                   return (
-                    <a
+                    <button
                       key={item.name}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                        setIsOpen(false);
+                      }}
                       aria-current={isActive ? "page" : undefined}
                       className={
                         "flex items-center space-x-3 transition-colors duration-200 font-medium " +
@@ -108,7 +116,7 @@ export default function Navigation() {
                     >
                       <Icon className="w-5 h-5" />
                       <span>{item.name}</span>
-                    </a>
+                    </button>
                   );
                 })}
                 <Button
