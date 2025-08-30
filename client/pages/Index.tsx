@@ -29,6 +29,16 @@ export default function Index() {
   const [showMoreMembers, setShowMoreMembers] = useState(false);
   const [showMoreStaff, setShowMoreStaff] = useState(false);
 
+  const withNoJump = (action: () => void) => (e: any) => {
+    e.preventDefault();
+    e.stopPropagation();
+    (e?.nativeEvent?.stopImmediatePropagation?.());
+    const x = window.scrollX;
+    const y = window.scrollY;
+    action();
+    requestAnimationFrame(() => window.scrollTo(x, y));
+  };
+
   // Prevent hash anchor jumps; smooth-scroll instead
   useEffect(() => {
     const handler = (e: Event) => {
@@ -404,7 +414,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); setShowMoreMembers(!showMoreMembers); (e.currentTarget as HTMLButtonElement).blur(); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={withNoJump(() => { setShowMoreMembers(!showMoreMembers); (document.activeElement as HTMLElement | null)?.blur?.(); })}>
                       {showMoreMembers ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -506,7 +516,7 @@ export default function Index() {
                   )}
 
                   <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); setShowMoreStaff(!showMoreStaff); (e.currentTarget as HTMLButtonElement).blur(); }}>
+                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={withNoJump(() => { setShowMoreStaff(!showMoreStaff); (document.activeElement as HTMLElement | null)?.blur?.(); })}>
                       {showMoreStaff ? "View less" : "View more"}
                     </Button>
                   </div>
@@ -632,7 +642,7 @@ export default function Index() {
                           onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                           onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); toggleEventDescription(event.name); (e.currentTarget as HTMLButtonElement).blur(); }}
+                          onClick={withNoJump(() => { toggleEventDescription(event.name); (document.activeElement as HTMLElement | null)?.blur?.(); })}
                           className="h-6 px-2 text-xs"
                         >
                           {expandedEvents[event.name] ? (
@@ -705,7 +715,7 @@ export default function Index() {
                         onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
                         onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); (e as any).nativeEvent?.stopImmediatePropagation?.(); setExpandedTalentShow(!expandedTalentShow); (e.currentTarget as HTMLButtonElement).blur(); }}
+                        onClick={withNoJump(() => { setExpandedTalentShow(!expandedTalentShow); (document.activeElement as HTMLElement | null)?.blur?.(); })}
                         className="h-6 px-2 text-xs"
                       >
                         {expandedTalentShow ? (
