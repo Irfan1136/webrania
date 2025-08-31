@@ -38,6 +38,7 @@ export default function Index() {
     const root = document.documentElement;
     const prev = root.style.scrollBehavior;
     root.style.scrollBehavior = 'auto';
+    (document.activeElement as HTMLElement | null)?.blur?.();
     action();
     requestAnimationFrame(() => {
       window.scrollTo({ left: x, top: y, behavior: 'auto' });
@@ -47,6 +48,21 @@ export default function Index() {
       });
     });
   };
+
+  useEffect(() => {
+    try {
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual';
+      }
+    } catch {}
+    return () => {
+      try {
+        if ('scrollRestoration' in window.history) {
+          window.history.scrollRestoration = 'auto';
+        }
+      } catch {}
+    };
+  }, []);
 
 
   const toggleEventDescription = (eventName: string) => {
