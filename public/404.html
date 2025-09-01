@@ -5,17 +5,22 @@
     <title>Redirecting...</title>
     <meta name="robots" content="noindex" />
     <script>
-      (function() {
+      (function () {
         var l = window.location;
-        var base = '/webrania/';
+        var base = "/webrania/";
         var path = l.pathname;
         if (path.indexOf(base) === 0) {
           path = path.slice(base.length);
-        } else if (path.charAt(0) === '/') {
+        } else if (path.charAt(0) === "/") {
           path = path.slice(1);
         }
-        var search = l.search ? l.search.slice(1) : '';
-        var newUrl = base + '?p=' + encodeURIComponent('/' + path) + (search ? '&q=' + encodeURIComponent(search) : '') + l.hash;
+        var search = l.search ? l.search.slice(1) : "";
+        var newUrl =
+          base +
+          "?p=" +
+          encodeURIComponent("/" + path) +
+          (search ? "&q=" + encodeURIComponent(search) : "") +
+          l.hash;
         l.replace(newUrl);
       })();
     </script>
