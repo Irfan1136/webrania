@@ -27,8 +27,6 @@ import {
 export default function Index() {
   const [expandedEvents, setExpandedEvents] = useState<{[key: string]: boolean}>({});
   const [expandedTalentShow, setExpandedTalentShow] = useState(false);
-  const [showMoreMembers, setShowMoreMembers] = useState(false);
-  const [showMoreStaff, setShowMoreStaff] = useState(false);
 
   const withNoJump = (action: () => void) => (e: any) => {
     e.preventDefault();
@@ -333,7 +331,7 @@ export default function Index() {
                 <CardTitle className="text-2xl gradient-text">Association Members</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
+                <div className="space-y-4 max-h-80 md:max-h-96 overflow-y-auto pr-2">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">MOHAMED IRFAN M</h4>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -360,8 +358,6 @@ export default function Index() {
                     </div>
                   </div>
 
-                  {showMoreMembers && (
-                    <>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">VENKATACHALAPATHI M</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -418,15 +414,7 @@ export default function Index() {
                           <a href="tel:6374889570" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 6374889570</a>
                         </div>
                       </div>
-                    </>
-                  )}
-
-                  <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={withNoJump(() => { setShowMoreMembers(!showMoreMembers); (document.activeElement as HTMLElement | null)?.blur?.(); })}>
-                      {showMoreMembers ? "View less" : "View more"}
-                    </Button>
                   </div>
-                </div>
               </CardContent>
             </Card>
 
@@ -439,7 +427,7 @@ export default function Index() {
                 <CardTitle className="text-2xl gradient-text">Staff In Charge</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
+                <div className="space-y-4 max-h-80 md:max-h-96 overflow-y-auto pr-2">
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -462,8 +450,6 @@ export default function Index() {
                     </div>
                   </div>
 
-                  {showMoreStaff && (
-                    <>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -482,7 +468,7 @@ export default function Index() {
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. RAMKUMAR C</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
-                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9585368444</a>
+                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">���� 9585368444</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
@@ -520,15 +506,7 @@ export default function Index() {
                           <a href="tel:9943150099" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9943150099</a>
                         </div>
                       </div>
-                    </>
-                  )}
-
-                  <div className="text-center pt-2">
-                    <Button variant="outline" size="sm" type="button" onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }} onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }} onClick={withNoJump(() => { setShowMoreStaff(!showMoreStaff); (document.activeElement as HTMLElement | null)?.blur?.(); })}>
-                      {showMoreStaff ? "View less" : "View more"}
-                    </Button>
                   </div>
-                </div>
               </CardContent>
             </Card>
           </div>
