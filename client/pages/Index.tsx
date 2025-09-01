@@ -442,14 +442,7 @@ export default function Index() {
                     </div>
                   </div>
 
-                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
-                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Dr. MOHAMED MUSTHAFA M</h4>
-                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <span className="text-sm px-3 py-1 bg-neon-blue/20 text-neon-blue rounded-full font-medium">VICE PRINCIPAL</span>
-                          <a href="tel:9715309000" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9715309000</a>
-                        </div>
-                      </div>
-                      <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
+                          <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Ms. SANGEETHA S</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
@@ -460,7 +453,7 @@ export default function Index() {
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. RAMKUMAR C</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
-                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">���� 9585368444</a>
+                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9585368444</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
