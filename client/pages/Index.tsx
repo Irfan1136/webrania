@@ -468,7 +468,7 @@ export default function Index() {
                         <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mr. RAMKUMAR C</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
-                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">���� 9585368444</a>
+                          <a href="tel:9585368444" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9585368444</a>
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
@@ -557,7 +557,7 @@ export default function Index() {
             <div className="mt-3 flex justify-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-pink/20 text-neon-pink border border-neon-pink/30 shadow">
                 <Calendar className="w-4 h-4" />
-                <span className="text-sm sm:text-base font-semibold tracking-wide uppercase">Event Date: SEPT 11, 2025</span>
+                <span className="text-sm sm:text-base font-semibold tracking-wide uppercase">Event Date: SEPT 10, 2025</span>
               </div>
             </div>
           </div>
