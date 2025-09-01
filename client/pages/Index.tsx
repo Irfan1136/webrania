@@ -16,7 +16,7 @@ import {
   Heart,
   Zap,
   Github,
-  Twitter,
+  Instagram,
   Mail,
   ChevronRight,
   Sparkles,
@@ -766,8 +766,10 @@ export default function Index() {
               <Button variant="ghost" size="icon" className="text-foreground/60 hover:text-primary">
                 <Github className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-foreground/60 hover:text-primary">
-                <Twitter className="w-5 h-5" />
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:text-primary">
+                <a href="https://www.instagram.com/webrania_aec?igsh=MWk0NXJiaXk4Y2s2cw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Instagram className="w-5 h-5" />
+                </a>
               </Button>
               <Button
                 variant="ghost"
