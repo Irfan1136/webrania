@@ -729,7 +729,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
                   alt="AL-AMEEN ENGINEERING COLLEGE Logo"
-                  className="w-8 h-8 object-contain"
+                  className="w-[60px] h-[60px] object-contain"
                 />
                 <p className="text-lg font-semibold gradient-text text-center">
                   Dr. Mohammed Zubair Rahman A M J
@@ -800,7 +800,7 @@ export default function Index() {
                   <span className="text-foreground/80">AL-AMEEN ENGINEERING COLLEGE</span>
                 </div>
               </div>
-              <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">⭐ Credits: WEBRANIA CSE Association</p>
+              <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">⭐ Credits: Mohamed Irfan M-Secratary-Final Year -CSE.</p>
             </div>
 
             <div>
