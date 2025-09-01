@@ -25,8 +25,6 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const [expandedEvents, setExpandedEvents] = useState<{[key: string]: boolean}>({});
-  const [expandedTalentShow, setExpandedTalentShow] = useState(false);
 
   const withNoJump = (action: () => void) => (e: any) => {
     e.preventDefault();
@@ -64,12 +62,6 @@ export default function Index() {
   }, []);
 
 
-  const toggleEventDescription = (eventName: string) => {
-    setExpandedEvents(prev => ({
-      ...prev,
-      [eventName]: !prev[eventName]
-    }));
-  };
 
   const missionPoints = [
     {
@@ -555,7 +547,7 @@ export default function Index() {
               Participate in technical and non-technical events designed to enhance your skills and showcase your talents
             </p>
             <div className="mt-3 flex justify-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-pink/20 text-neon-pink border border-neon-pink/30 shadow">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400 border border-yellow-400/30 shadow">
                 <Calendar className="w-4 h-4" />
                 <span className="text-sm sm:text-base font-semibold tracking-wide uppercase">Event Date: SEPT 10, 2025</span>
               </div>
@@ -618,37 +610,16 @@ export default function Index() {
                       description: "Design creative and informative posters on cutting-edge technical topics, combining artistic creativity with technical accuracy. Themes can include emerging technologies, future of computing, digital transformation, tech innovations, environmental technology, or social impact of technology. Posters should be visually appealing, well-researched, informative, and technically accurate. Use of graphics, charts, infographics, and creative layouts is encouraged. Size: A1 or A2 format. Evaluation based on creativity, technical content, visual appeal, originality, research quality, and message clarity. Digital tools or hand-drawing both accepted. Time limit: 2-3 hours for on-spot creation."
                     }
                   ].map((event, index) => (
-                    <div key={index} className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                    <div key={index} className="p-3 bg-background/30 rounded-lg border border-primary/10 group">
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center space-x-3">
                           <span className="text-2xl">{event.icon}</span>
                           <span className="text-sm sm:text-base font-medium text-foreground/90">{event.name}</span>
                         </div>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          type="button"
-                          onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                          onClick={withNoJump(() => { toggleEventDescription(event.name); (document.activeElement as HTMLElement | null)?.blur?.(); })}
-                          className="h-6 px-2 text-xs"
-                        >
-                          {expandedEvents[event.name] ? (
-                            <>
-                              <ChevronUp className="w-3 h-3 mr-1" />
-                              Less
-                            </>
-                          ) : (
-                            <>
-                              <ChevronDown className="w-3 h-3 mr-1" />
-                              More
-                            </>
-                          )}
-                        </Button>
+                        <div className="h-6 px-2 text-xs text-foreground/70 flex items-center select-none">
+                          <ChevronDown className="w-3 h-3 mr-1" />
+                          More
+                        </div>
                       </div>
                       <div className="ml-11 space-y-1">
                         <div className="flex items-center space-x-2">
@@ -663,15 +634,12 @@ export default function Index() {
                         </div>
                       </div>
 
-                      {/* Click-based Description */}
-                      {expandedEvents[event.name] && (
-                        <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
-                          {event.place && (
-                            <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-bold">PLACE:</span> {event.place}</p>
-                          )}
-                          <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">{event.description}</p>
-                        </div>
-                      )}
+                      <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
+                        {event.place && (
+                          <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed mb-2"><span className="font-bold">PLACE:</span> {event.place}</p>
+                        )}
+                        <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">{event.description}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -691,37 +659,16 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                  <div className="p-3 bg-background/30 rounded-lg border border-primary/10 group">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-3">
                         <span className="text-2xl">🎭</span>
                         <span className="font-medium text-foreground/90">Talent Show</span>
                       </div>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        type="button"
-                        onPointerDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onPointerUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onKeyDown={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onKeyUp={(e) => { e.preventDefault(); e.stopPropagation(); }}
-                        onClick={withNoJump(() => { setExpandedTalentShow(!expandedTalentShow); (document.activeElement as HTMLElement | null)?.blur?.(); })}
-                        className="h-6 px-2 text-xs"
-                      >
-                        {expandedTalentShow ? (
-                          <>
-                            <ChevronUp className="w-3 h-3 mr-1" />
-                            Less
-                          </>
-                        ) : (
-                          <>
-                            <ChevronDown className="w-3 h-3 mr-1" />
-                            More
-                          </>
-                        )}
-                      </Button>
+                      <div className="h-6 px-2 text-xs text-foreground/70 flex items-center select-none">
+                        <ChevronDown className="w-3 h-3 mr-1" />
+                        More
+                      </div>
                     </div>
                     <div className="ml-11">
                       <span className="text-xs px-2 py-1 bg-destructive/20 text-destructive rounded-full font-medium">
@@ -729,14 +676,11 @@ export default function Index() {
                       </span>
                     </div>
 
-                    {/* Click-based Description */}
-                    {expandedTalentShow && (
-                      <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg">
-                        <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
-                          Express your unique individual talents and creativity! Accepted performances include: vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any other creative solo performance. Group dance is strictly prohibited, but all other individual talents are welcomed and encouraged. Time limit: 3-5 minutes per performance. Participants may use backing tracks or instrumental music. Evaluation criteria include creativity, stage presence, audience engagement, technical skill, and entertainment value. Prizes for most creative, most entertaining, and best overall performance!
-                        </p>
-                      </div>
-                    )}
+                    <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
+                      <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
+                        Express your unique individual talents and creativity! Accepted performances include: vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any other creative solo performance. Group dance is strictly prohibited, but all other individual talents are welcomed and encouraged. Time limit: 3-5 minutes per performance. Participants may use backing tracks or instrumental music. Evaluation criteria include creativity, stage presence, audience engagement, technical skill, and entertainment value. Prizes for most creative, most entertaining, and best overall performance!
+                      </p>
+                    </div>
                   </div>
                   <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                     <p className="text-sm text-foreground/80 italic">
@@ -759,7 +703,7 @@ export default function Index() {
             <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">��</span>
+                  <span className="text-2xl">🏆</span>
                 </div>
                 <h4 className="text-xl font-semibold text-neon-purple mb-3">Exciting Prizes</h4>
                 <p className="text-foreground/80 leading-relaxed">
