@@ -464,7 +464,7 @@ export default function Index() {
                         </div>
                       </div>
                       <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
-                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. VASUKI P</h4>
+                        <h4 className="font-semibold text-lg text-foreground/90 mb-2">Mrs. VASUKI M</h4>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <span className="text-sm px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full font-medium">AP/CSE</span>
                           <a href="tel:9629778223" className="text-foreground/80 hover:text-primary transition-colors font-mono">📞 9629778223</a>
@@ -603,7 +603,7 @@ export default function Index() {
                     },
                     {
                       name: "Poster Designing",
-                      icon: "🎨",
+                      icon: "��",
                       members: "Individual",
                       details: "",
                       place: "CC1",
