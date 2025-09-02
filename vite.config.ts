@@ -39,3 +39,21 @@ function expressPlugin(): Plugin {
     },
   };
 }
+
+function noJekyllPlugin(): Plugin {
+  let outDir = "";
+  return {
+    name: "nojekyll-plugin",
+    apply: "build",
+    configResolved(config) {
+      outDir = config.build.outDir;
+    },
+    closeBundle() {
+      try {
+        const filePath = path.resolve(outDir, ".nojekyll");
+        fs.mkdirSync(outDir, { recursive: true });
+        fs.writeFileSync(filePath, "");
+      } catch (e) {}
+    },
+  };
+}
