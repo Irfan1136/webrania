@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "docs",
   },
-  plugins: [react(), expressPlugin()],
+  plugins: [react(), expressPlugin(), noJekyllPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
