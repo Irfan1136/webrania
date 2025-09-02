@@ -1145,6 +1145,9 @@ export default function Index() {
               <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">
                 ⭐ Credits: Mohamed Irfan M-Secratary-Final Year -CSE.
               </p>
+              <p className="text-xs text-foreground/70 mt-2 inline-block border border-primary/20 rounded px-2 py-1">
+                Special thanks to Suaib S Final Year - CSE
+              </p>
             </div>
 
             <div>
