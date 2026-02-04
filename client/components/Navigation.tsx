@@ -34,6 +34,7 @@ export default function Navigation() {
     { name: "About", href: "#about", icon: Users },
     { name: "Vision", href: "#vision", icon: Target },
     { name: "Mission", href: "#mission", icon: MessageSquare },
+    { name: "Clubs", href: "#clubs", icon: Users },
     { name: "Contact", href: "#contact", icon: MessageSquare },
     { name: "Events", href: "#events", icon: Calendar },
   ];
