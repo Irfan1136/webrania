@@ -8,7 +8,7 @@ export default function Navigation() {
   const [activeHref, setActiveHref] = useState<string>("#home");
 
   useEffect(() => {
-    const ids = ["home", "about", "vision", "mission", "contact", "events"];
+    const ids = ["home", "about", "vision", "mission", "clubs", "contact", "events"];
     const sections = ids
       .map((id) => document.getElementById(id))
       .filter((el): el is HTMLElement => !!el);
