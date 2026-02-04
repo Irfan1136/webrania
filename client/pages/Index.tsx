@@ -356,6 +356,161 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Clubs Section */}
+      <section id="clubs" className="py-12 md:py-20 lg:py-32 bg-card/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30">
+              <Users className="w-4 h-4 mr-2" />
+              Our Clubs
+            </Badge>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Clubs Under <span className="gradient-text">WEBRANIA</span>
+            </h2>
+            <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
+              Specialized interest groups dedicated to fostering innovation, learning, and collaboration
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* TECHNO HiVE Club */}
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
+              <CardHeader className="pb-0">
+                <div className="flex justify-center mb-6 -mx-6 -mt-6 bg-gradient-to-b from-neon-purple/10 to-transparent pt-6 pb-8">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F93405f7a24264f08a539d74ee6745014?format=webp&width=800&height=1200"
+                    alt="TECHNO HiVE Logo"
+                    className="w-32 h-32 object-contain"
+                  />
+                </div>
+                <CardTitle className="text-3xl text-center gradient-text mb-2">
+                  TECHNO HiVE
+                </CardTitle>
+                <CardDescription className="text-center text-foreground/80">
+                  "Innovation Through Collaboration"
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-center text-foreground/80 text-sm md:text-base leading-relaxed">
+                  TECHNO HiVE is dedicated to exploring cutting-edge technologies, fostering innovation, and building a community of tech enthusiasts who collaborate on groundbreaking projects.
+                </p>
+
+                {/* Club Leadership */}
+                <div className="space-y-3 border-t border-primary/10 pt-6">
+                  <h4 className="font-semibold text-lg text-neon-purple mb-4">Leadership</h4>
+                  <div className="space-y-2">
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">President</p>
+                      <p className="text-sm text-foreground/70">Ms. Priyanga J – IV Year CSE</p>
+                    </div>
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">Vice President</p>
+                      <p className="text-sm text-foreground/70">Mr. Jesuraja J – III Year CSE</p>
+                    </div>
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">Secretary</p>
+                      <p className="text-sm text-foreground/70">Mr. Mohamed Asik I – III Year CSE</p>
+                    </div>
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">Joint Secretary</p>
+                      <p className="text-sm text-foreground/70">Ms. Saburunnisha S – II Year CSE</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Executive Members */}
+                <div className="space-y-3 border-t border-primary/10 pt-6">
+                  <h4 className="font-semibold text-lg text-neon-purple mb-4">Executive Members</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {[
+                      "Mr. Apsal S – IV Year CSE",
+                      "Mr. Arunpandi M – IV Year CSE",
+                      "Ms. Priya Jeniffer S – IV Year CSE",
+                      "Mr. AR Fazil – III Year CSE",
+                      "Mr. Siddiq Raja A – II Year CSE",
+                      "Ms. Kaniska – II Year CSE",
+                      "Ms. Hafila Farhana J – II Year CSE"
+                    ].map((member, index) => (
+                      <div key={index} className="p-2 bg-background/20 rounded border border-primary/5">
+                        <p className="text-xs text-foreground/80">{member}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* DEVELOPER CLUB */}
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
+              <CardHeader className="pb-0">
+                <div className="flex justify-center mb-6 -mx-6 -mt-6 bg-gradient-to-b from-neon-blue/10 to-transparent pt-6 pb-8">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fa49cf763a5224d1aa6a79e549a80b048?format=webp&width=800&height=1200"
+                    alt="DEVELOPER CLUB Logo"
+                    className="w-32 h-32 object-contain"
+                  />
+                </div>
+                <CardTitle className="text-3xl text-center gradient-text mb-2">
+                  DEVELOPER CLUB
+                </CardTitle>
+                <CardDescription className="text-center text-foreground/80">
+                  "A Initiative of CSE DEPT"
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-center text-foreground/80 text-sm md:text-base leading-relaxed">
+                  The Developer Club is an initiative to nurture programming skills, promote collaborative development practices, and create a vibrant community of passionate developers working on real-world projects.
+                </p>
+
+                {/* Club Leadership */}
+                <div className="space-y-3 border-t border-primary/10 pt-6">
+                  <h4 className="font-semibold text-lg text-neon-blue mb-4">Leadership</h4>
+                  <div className="space-y-2">
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">President</p>
+                      <p className="text-sm text-foreground/70">Mr. Mohamed Irfan M – IV Year CSE</p>
+                    </div>
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">Vice President</p>
+                      <p className="text-sm text-foreground/70">Mr. A R Fazil – III Year CSE</p>
+                    </div>
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">Secretary</p>
+                      <p className="text-sm text-foreground/70">Mr. Venkatachalapathi M – II Year CSE</p>
+                    </div>
+                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                      <p className="text-sm font-medium text-foreground/90">Joint Secretary</p>
+                      <p className="text-sm text-foreground/70">Mr. Chandru N – II Year CSE</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Executive Members */}
+                <div className="space-y-3 border-t border-primary/10 pt-6">
+                  <h4 className="font-semibold text-lg text-neon-blue mb-4">Executive Members</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {[
+                      "Barakath Nisha A – II Year CSE",
+                      "Dhana Shree D – II Year CSE",
+                      "Hafila Farhana J – II Year CSE",
+                      "John Kennedy – II Year CSE",
+                      "Rasha Noorjahan S – II Year CSE",
+                      "Saburunnisha S – II Year CSE",
+                      "Shifu Y – II Year CSE",
+                      "Sidiq A – II Year CSE"
+                    ].map((member, index) => (
+                      <div key={index} className="p-2 bg-background/20 rounded border border-primary/5">
+                        <p className="text-xs text-foreground/80">{member}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-12 md:py-20 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
