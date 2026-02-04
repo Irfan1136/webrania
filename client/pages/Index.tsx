@@ -1358,6 +1358,17 @@ export default function Index() {
                   type="button"
                   onClick={() =>
                     document
+                      .getElementById("clubs")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="block text-left text-foreground/80 hover:text-primary transition-colors"
+                >
+                  Clubs
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    document
                       .getElementById("events")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
