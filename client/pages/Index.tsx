@@ -518,7 +518,86 @@ export default function Index() {
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12" suppressHydrationWarning>
             {/* DEVELOPER CLUB */}
-            <DeveloperClubCard />
+            <ClubCard
+              clubName="DEVELOPER CLUB"
+              clubTagline='"A Initiative of CSE DEPT"'
+              clubDescription="The Developer Club is an initiative to nurture programming skills, promote collaborative development practices, and create a vibrant community of passionate developers working on real-world projects."
+              logoUrl="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fa49cf763a5224d1aa6a79e549a80b048?format=webp&width=800&height=1200"
+              themeColor="blue"
+              leadership={[
+                { title: "President", name: "Mr. Mohamed Irfan M – IV Year CSE" },
+                { title: "Vice President", name: "Mr. A R Fazil – III Year CSE" },
+                { title: "Secretary", name: "Mr. Venkatachalapathi M – II Year CSE" },
+                { title: "Joint Secretary", name: "Mr. Chandru N – II Year CSE" }
+              ]}
+              branches={[
+                {
+                  name: "CSE",
+                  executives: [
+                    "Barakath Nisha A – II Year CSE",
+                    "Hafila Farhana J – II Year CSE",
+                    "John Kennedy – II Year CSE",
+                    "Saburunnisha S – II Year CSE"
+                  ],
+                  volunteers: [
+                    "Dhana Shree D – II Year CSE",
+                    "Rasha Noorjahan S – II Year CSE",
+                    "Shifu Y – II Year CSE",
+                    "Sidiq A – II Year CSE"
+                  ]
+                },
+                {
+                  name: "AI & DS",
+                  executives: [
+                    "Ayeesha Rilwana H – II Year AI & DS",
+                    "Pugalarasu J R – II Year AI & DS",
+                    "Ramzani A – II Year AI & DS",
+                    "Sowmiya K – II Year AI & DS"
+                  ],
+                  volunteers: [
+                    "Gowtham J – II Year AI & DS",
+                    "James Inbaraj S – II Year AI & DS",
+                    "Kamila G – II Year AI & DS",
+                    "Rakshantha J – II Year AI & DS",
+                    "Sathiya Begum S – II Year AI & DS",
+                    "Sreemathi R – II Year AI & DS",
+                    "Vaishnavi M – II Year AI & DS"
+                  ]
+                },
+                {
+                  name: "IT",
+                  executives: [
+                    "Asha Banu M – II Year IT",
+                    "Meena G – II Year IT",
+                    "Mohammed Ashiq A – II Year IT",
+                    "Siddik M – II Year IT"
+                  ],
+                  volunteers: [
+                    "Abuhuraira G J S – II Year IT",
+                    "Archana A – II Year IT",
+                    "Bharath S – II Year IT",
+                    "Gowtham P – II Year IT",
+                    "Kishore S – II Year IT",
+                    "Manasha G – II Year IT",
+                    "Oviya S – II Year IT",
+                    "Thamizhini M – II Year IT"
+                  ]
+                },
+                {
+                  name: "ECE",
+                  executives: [
+                    "Gajini K – II Year ECE",
+                    "Haseena Mariyam M – II Year ECE",
+                    "Nandika M – II Year ECE"
+                  ],
+                  volunteers: [
+                    "Azeeba Shana S – II Year ECE",
+                    "Eswaran S – II Year ECE",
+                    "Nilafar Nisha K – II Year ECE"
+                  ]
+                }
+              ]}
+            />
 
             {/* TECHNO HiVE Club */}
             <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
