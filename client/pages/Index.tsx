@@ -19,13 +19,13 @@ function ClubCard({
   themeColor,
   leadership,
   executives,
-  volunteers
+  volunteers,
 }: {
   clubName: string;
   clubTagline: string;
   clubDescription: string;
   logoUrl: string;
-  themeColor: 'blue' | 'purple';
+  themeColor: "blue" | "purple";
   leadership: Array<{ title: string; name: string }>;
   executives: string[];
   volunteers: string[];
@@ -38,19 +38,19 @@ function ClubCard({
 
   const themeColors = {
     blue: {
-      bg: 'from-neon-blue/10',
-      text: 'text-neon-blue',
-      border: 'border-neon-blue/30',
-      bgLight: 'bg-neon-blue/10',
-      bgMedium: 'bg-neon-blue/5'
+      bg: "from-neon-blue/10",
+      text: "text-neon-blue",
+      border: "border-neon-blue/30",
+      bgLight: "bg-neon-blue/10",
+      bgMedium: "bg-neon-blue/5",
     },
     purple: {
-      bg: 'from-neon-purple/10',
-      text: 'text-neon-purple',
-      border: 'border-neon-purple/30',
-      bgLight: 'bg-neon-purple/10',
-      bgMedium: 'bg-neon-purple/5'
-    }
+      bg: "from-neon-purple/10",
+      text: "text-neon-purple",
+      border: "border-neon-purple/30",
+      bgLight: "bg-neon-purple/10",
+      bgMedium: "bg-neon-purple/5",
+    },
   };
 
   const colors = themeColors[themeColor];
@@ -58,7 +58,9 @@ function ClubCard({
   return (
     <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
       <CardHeader className="pb-0">
-        <div className={`flex justify-center mb-6 -mx-6 -mt-6 bg-gradient-to-b ${colors.bg} to-transparent pt-6 pb-8`}>
+        <div
+          className={`flex justify-center mb-6 -mx-6 -mt-6 bg-gradient-to-b ${colors.bg} to-transparent pt-6 pb-8`}
+        >
           <img
             src={logoUrl}
             alt={`${clubName} Logo`}
@@ -79,12 +81,23 @@ function ClubCard({
 
         {/* Club Leadership */}
         <div className="space-y-3 border-t border-primary/10 pt-5 md:pt-6">
-          <h4 className={`font-semibold text-base md:text-lg ${colors.text} mb-3`}>Leadership</h4>
+          <h4
+            className={`font-semibold text-base md:text-lg ${colors.text} mb-3`}
+          >
+            Leadership
+          </h4>
           <div className="space-y-2">
             {leadership.map((leader, idx) => (
-              <div key={idx} className={`p-3 bg-gradient-to-r ${colors.bgLight} to-transparent rounded-lg border ${colors.border}`}>
-                <p className={`text-xs md:text-sm font-medium ${colors.text}`}>{leader.title}</p>
-                <p className="text-xs md:text-sm text-foreground/90">{leader.name}</p>
+              <div
+                key={idx}
+                className={`p-3 bg-gradient-to-r ${colors.bgLight} to-transparent rounded-lg border ${colors.border}`}
+              >
+                <p className={`text-xs md:text-sm font-medium ${colors.text}`}>
+                  {leader.title}
+                </p>
+                <p className="text-xs md:text-sm text-foreground/90">
+                  {leader.name}
+                </p>
               </div>
             ))}
           </div>
@@ -92,13 +105,20 @@ function ClubCard({
 
         {/* Executive Members - Always Visible */}
         <div className="space-y-3 border-t border-primary/10 pt-5 md:pt-6">
-          <h4 className={`font-semibold text-base md:text-lg ${colors.text} mb-3`}>
+          <h4
+            className={`font-semibold text-base md:text-lg ${colors.text} mb-3`}
+          >
             Executive Members ({executives.length})
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-2">
             {executives.map((member, idx) => (
-              <div key={idx} className={`p-3 ${colors.bgLight} rounded-lg border ${colors.border}`}>
-                <p className="text-xs md:text-sm text-foreground/80 line-clamp-2">⭐ {member}</p>
+              <div
+                key={idx}
+                className={`p-3 ${colors.bgLight} rounded-lg border ${colors.border}`}
+              >
+                <p className="text-xs md:text-sm text-foreground/80 line-clamp-2">
+                  ⭐ {member}
+                </p>
               </div>
             ))}
           </div>
@@ -111,12 +131,14 @@ function ClubCard({
               onClick={toggleVolunteers}
               className={`w-full p-3 ${colors.bgLight} hover:opacity-80 transition-opacity rounded-lg flex items-center justify-between border ${colors.border}`}
             >
-              <span className={`text-sm md:text-base font-semibold ${colors.text}`}>
+              <span
+                className={`text-sm md:text-base font-semibold ${colors.text}`}
+              >
                 Volunteers ({volunteers.length})
               </span>
               <ChevronDown
                 className={`w-5 h-5 ${colors.text} transition-transform ${
-                  expandedVolunteers ? 'rotate-180' : ''
+                  expandedVolunteers ? "rotate-180" : ""
                 }`}
               />
             </button>
@@ -124,8 +146,13 @@ function ClubCard({
             {expandedVolunteers && (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-2 pt-2">
                 {volunteers.map((member, idx) => (
-                  <div key={idx} className="p-3 bg-background/30 rounded-lg border border-primary/10">
-                    <p className="text-xs md:text-sm text-foreground/70 line-clamp-2">{member}</p>
+                  <div
+                    key={idx}
+                    className="p-3 bg-background/30 rounded-lg border border-primary/10"
+                  >
+                    <p className="text-xs md:text-sm text-foreground/70 line-clamp-2">
+                      {member}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -494,11 +521,15 @@ export default function Index() {
               Clubs Under <span className="gradient-text">WEBRANIA</span>
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              Specialized interest groups dedicated to fostering innovation, learning, and collaboration
+              Specialized interest groups dedicated to fostering innovation,
+              learning, and collaboration
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12" suppressHydrationWarning>
+          <div
+            className="grid lg:grid-cols-2 gap-8 mb-12"
+            suppressHydrationWarning
+          >
             {/* DEVELOPER CLUB */}
             <ClubCard
               clubName="DEVELOPER CLUB"
@@ -507,10 +538,22 @@ export default function Index() {
               logoUrl="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fa49cf763a5224d1aa6a79e549a80b048?format=webp&width=800&height=1200"
               themeColor="blue"
               leadership={[
-                { title: "President", name: "Mr. Mohamed Irfan M – IV Year CSE" },
-                { title: "Vice President", name: "Mr. A R Fazil – III Year CSE" },
-                { title: "Secretary", name: "Mr. Venkatachalapathi M – II Year CSE" },
-                { title: "Joint Secretary", name: "Mr. Chandru N – II Year CSE" }
+                {
+                  title: "President",
+                  name: "Mr. Mohamed Irfan M – IV Year CSE",
+                },
+                {
+                  title: "Vice President",
+                  name: "Mr. A R Fazil – III Year CSE",
+                },
+                {
+                  title: "Secretary",
+                  name: "Mr. Venkatachalapathi M – II Year CSE",
+                },
+                {
+                  title: "Joint Secretary",
+                  name: "Mr. Chandru N – II Year CSE",
+                },
               ]}
               executives={[
                 "Barakath Nisha A – II Year CSE",
@@ -527,7 +570,7 @@ export default function Index() {
                 "Siddik M – II Year IT",
                 "Gajini K – II Year ECE",
                 "Haseena Mariyam M – II Year ECE",
-                "Nandika M – II Year ECE"
+                "Nandika M – II Year ECE",
               ]}
               volunteers={[
                 "Dhana Shree D – II Year CSE",
@@ -551,7 +594,7 @@ export default function Index() {
                 "Thamizhini M – II Year IT",
                 "Azeeba Shana S – II Year ECE",
                 "Eswaran S – II Year ECE",
-                "Nilafar Nisha K – II Year ECE"
+                "Nilafar Nisha K – II Year ECE",
               ]}
             />
 
@@ -564,9 +607,18 @@ export default function Index() {
               themeColor="purple"
               leadership={[
                 { title: "President", name: "Ms. Priyanga J – IV Year CSE" },
-                { title: "Vice President", name: "Mr. Jesuraja J – III Year CSE" },
-                { title: "Secretary", name: "Mr. Mohamed Asik I – III Year CSE" },
-                { title: "Joint Secretary", name: "Ms. Saburunnisha S – II Year CSE" }
+                {
+                  title: "Vice President",
+                  name: "Mr. Jesuraja J – III Year CSE",
+                },
+                {
+                  title: "Secretary",
+                  name: "Mr. Mohamed Asik I – III Year CSE",
+                },
+                {
+                  title: "Joint Secretary",
+                  name: "Ms. Saburunnisha S – II Year CSE",
+                },
               ]}
               executives={[
                 "Mr. Apsal S – IV Year CSE",
@@ -575,11 +627,10 @@ export default function Index() {
                 "Mr. AR Fazil – III Year CSE",
                 "Mr. Siddiq Raja A – II Year CSE",
                 "Ms. Kaniska – II Year CSE",
-                "Ms. Hafila Farhana J – II Year CSE"
+                "Ms. Hafila Farhana J – II Year CSE",
               ]}
               volunteers={[]}
             />
-
           </div>
         </div>
       </section>
@@ -1262,7 +1313,6 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
-
         </div>
       </section>
 
