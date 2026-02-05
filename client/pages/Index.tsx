@@ -568,21 +568,16 @@ export default function Index() {
                 { title: "Secretary", name: "Mr. Mohamed Asik I – III Year CSE" },
                 { title: "Joint Secretary", name: "Ms. Saburunnisha S – II Year CSE" }
               ]}
-              branches={[
-                {
-                  name: "All Branches",
-                  executives: [
-                    "Mr. Apsal S – IV Year CSE",
-                    "Mr. Arunpandi M – IV Year CSE",
-                    "Ms. Priya Jeniffer S – IV Year CSE",
-                    "Mr. AR Fazil – III Year CSE",
-                    "Mr. Siddiq Raja A – II Year CSE",
-                    "Ms. Kaniska – II Year CSE",
-                    "Ms. Hafila Farhana J – II Year CSE"
-                  ],
-                  volunteers: []
-                }
+              executives={[
+                "Mr. Apsal S – IV Year CSE",
+                "Mr. Arunpandi M – IV Year CSE",
+                "Ms. Priya Jeniffer S – IV Year CSE",
+                "Mr. AR Fazil – III Year CSE",
+                "Mr. Siddiq Raja A – II Year CSE",
+                "Ms. Kaniska – II Year CSE",
+                "Ms. Hafila Farhana J – II Year CSE"
               ]}
+              volunteers={[]}
             />
 
           </div>
