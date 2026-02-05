@@ -1019,10 +1019,13 @@ export default function Index() {
               <Calendar className="w-4 h-4 mr-2" />
               Our Events
             </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Join Our <span className="gradient-text">Events</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-2">
+              <span className="gradient-text">ACE'2K26</span>
             </h2>
-            <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-foreground/80 mb-6">
+              Join Our Technical & Non-Technical Events
+            </p>
+            <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto mb-6">
               Participate in technical and non-technical events designed to
               enhance your skills and showcase your talents
             </p>
@@ -1030,7 +1033,7 @@ export default function Index() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400 border border-yellow-400/30 shadow">
                 <Calendar className="w-4 h-4" />
                 <span className="text-sm sm:text-base font-semibold tracking-wide uppercase">
-                  Event Date: SEPT 10, 2025
+                  Event Date: FEB 17, 2026
                 </span>
               </div>
             </div>
