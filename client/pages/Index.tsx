@@ -18,7 +18,8 @@ function ClubCard({
   logoUrl,
   themeColor,
   leadership,
-  branches
+  executives,
+  volunteers
 }: {
   clubName: string;
   clubTagline: string;
@@ -26,19 +27,13 @@ function ClubCard({
   logoUrl: string;
   themeColor: 'blue' | 'purple';
   leadership: Array<{ title: string; name: string }>;
-  branches: Array<{
-    name: string;
-    executives: string[];
-    volunteers: string[]
-  }>;
+  executives: string[];
+  volunteers: string[];
 }) {
-  const [expandedVolunteers, setExpandedVolunteers] = useState<{[key: string]: boolean}>({});
+  const [expandedVolunteers, setExpandedVolunteers] = useState(false);
 
-  const toggleVolunteers = (key: string) => {
-    setExpandedVolunteers(prev => ({
-      ...prev,
-      [key]: !prev[key]
-    }));
+  const toggleVolunteers = () => {
+    setExpandedVolunteers(!expandedVolunteers);
   };
 
   const themeColors = {
@@ -95,61 +90,48 @@ function ClubCard({
           </div>
         </div>
 
-        {/* Branches */}
+        {/* Executive Members - Always Visible */}
         <div className="space-y-3 border-t border-primary/10 pt-5 md:pt-6">
-          <h4 className={`font-semibold text-base md:text-lg ${colors.text} mb-3`}>Members by Branch</h4>
-          <div className="space-y-4">
-            {branches.map((branch) => (
-              <div key={branch.name} className={`border ${colors.border} ${colors.bgMedium} rounded-lg overflow-hidden`}>
-                {/* Branch Header */}
-                <div className={`p-3 md:p-4 bg-gradient-to-r ${colors.bgLight} to-transparent`}>
-                  <h5 className={`font-semibold text-sm md:text-base ${colors.text} mb-3`}>{branch.name} Branch</h5>
-
-                  {/* Executive Members - Always Visible */}
-                  <div className="space-y-2 mb-4">
-                    <p className={`text-xs md:text-sm font-medium ${colors.text} px-1`}>
-                      Executive Members ({branch.executives.length})
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto pr-2">
-                      {branch.executives.map((member, idx) => (
-                        <div key={idx} className={`p-2 ${colors.bgLight} rounded border ${colors.border}`}>
-                          <p className="text-xs text-foreground/80 line-clamp-2">⭐ {member}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Volunteers - Collapsible */}
-                  <div className="space-y-2">
-                    <button
-                      onClick={() => toggleVolunteers(`${branch.name}-vol`)}
-                      className={`w-full p-2 ${colors.bgLight} hover:opacity-80 transition-opacity rounded-lg flex items-center justify-between`}
-                    >
-                      <span className={`text-xs md:text-sm font-medium ${colors.text}`}>
-                        Volunteers ({branch.volunteers.length})
-                      </span>
-                      <ChevronDown
-                        className={`w-4 h-4 ${colors.text} transition-transform ${
-                          expandedVolunteers[`${branch.name}-vol`] ? 'rotate-180' : ''
-                        }`}
-                      />
-                    </button>
-
-                    {expandedVolunteers[`${branch.name}-vol`] && (
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto pr-2">
-                        {branch.volunteers.map((member, idx) => (
-                          <div key={idx} className="p-2 bg-background/30 rounded border border-primary/10">
-                            <p className="text-xs text-foreground/70 line-clamp-2">{member}</p>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
+          <h4 className={`font-semibold text-base md:text-lg ${colors.text} mb-3`}>
+            Executive Members ({executives.length})
+          </h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-2">
+            {executives.map((member, idx) => (
+              <div key={idx} className={`p-3 ${colors.bgLight} rounded-lg border ${colors.border}`}>
+                <p className="text-xs md:text-sm text-foreground/80 line-clamp-2">⭐ {member}</p>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Volunteers - Collapsible */}
+        {volunteers.length > 0 && (
+          <div className="space-y-3 border-t border-primary/10 pt-5 md:pt-6">
+            <button
+              onClick={toggleVolunteers}
+              className={`w-full p-3 ${colors.bgLight} hover:opacity-80 transition-opacity rounded-lg flex items-center justify-between border ${colors.border}`}
+            >
+              <span className={`text-sm md:text-base font-semibold ${colors.text}`}>
+                Volunteers ({volunteers.length})
+              </span>
+              <ChevronDown
+                className={`w-5 h-5 ${colors.text} transition-transform ${
+                  expandedVolunteers ? 'rotate-180' : ''
+                }`}
+              />
+            </button>
+
+            {expandedVolunteers && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-2 pt-2">
+                {volunteers.map((member, idx) => (
+                  <div key={idx} className="p-3 bg-background/30 rounded-lg border border-primary/10">
+                    <p className="text-xs md:text-sm text-foreground/70 line-clamp-2">{member}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
       </CardContent>
     </Card>
   );
