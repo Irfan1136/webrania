@@ -372,7 +372,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 mb-12" suppressHydrationWarning>
             {/* DEVELOPER CLUB */}
             <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden order-first lg:order-none">
               <CardHeader className="pb-0">
