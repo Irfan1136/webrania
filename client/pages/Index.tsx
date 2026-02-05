@@ -10,6 +10,207 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
+
+function DeveloperClubCard() {
+  const [expandedBranches, setExpandedBranches] = useState<{[key: string]: boolean}>({});
+  const [expandedSection, setExpandedSection] = useState<{[key: string]: boolean}>({});
+
+  const toggleBranch = (branch: string) => {
+    setExpandedBranches(prev => ({
+      ...prev,
+      [branch]: !prev[branch]
+    }));
+  };
+
+  const toggleSection = (key: string) => {
+    setExpandedSection(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  const branches = [
+    {
+      name: "CSE",
+      executives: [
+        "Barakath Nisha A – II Year CSE",
+        "Hafila Farhana J – II Year CSE",
+        "John Kennedy – II Year CSE",
+        "Saburunnisha S – II Year CSE"
+      ],
+      volunteers: [
+        "Dhana Shree D – II Year CSE",
+        "Rasha Noorjahan S – II Year CSE",
+        "Shifu Y – II Year CSE",
+        "Sidiq A – II Year CSE"
+      ]
+    },
+    {
+      name: "AI & DS",
+      executives: [
+        "Ayeesha Rilwana H – II Year AI & DS",
+        "Pugalarasu J R – II Year AI & DS",
+        "Ramzani A – II Year AI & DS",
+        "Sowmiya K – II Year AI & DS"
+      ],
+      volunteers: [
+        "Gowtham J – II Year AI & DS",
+        "James Inbaraj S – II Year AI & DS",
+        "Kamila G – II Year AI & DS",
+        "Rakshantha J – II Year AI & DS",
+        "Sathiya Begum S – II Year AI & DS",
+        "Sreemathi R – II Year AI & DS",
+        "Vaishnavi M – II Year AI & DS"
+      ]
+    },
+    {
+      name: "IT",
+      executives: [
+        "Asha Banu M – II Year IT",
+        "Meena G – II Year IT",
+        "Mohammed Ashiq A – II Year IT",
+        "Siddik M – II Year IT"
+      ],
+      volunteers: [
+        "Abuhuraira G J S – II Year IT",
+        "Archana A – II Year IT",
+        "Bharath S – II Year IT",
+        "Gowtham P – II Year IT",
+        "Kishore S – II Year IT",
+        "Manasha G – II Year IT",
+        "Oviya S – II Year IT",
+        "Thamizhini M – II Year IT"
+      ]
+    },
+    {
+      name: "ECE",
+      executives: [
+        "Gajini K – II Year ECE",
+        "Haseena Mariyam M – II Year ECE",
+        "Nandika M – II Year ECE"
+      ],
+      volunteers: [
+        "Azeeba Shana S – II Year ECE",
+        "Eswaran S – II Year ECE",
+        "Nilafar Nisha K – II Year ECE"
+      ]
+    }
+  ];
+
+  return (
+    <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden order-first lg:order-none">
+      <CardHeader className="pb-0">
+        <div className="flex justify-center mb-6 -mx-6 -mt-6 bg-gradient-to-b from-neon-blue/10 to-transparent pt-6 pb-8">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fa49cf763a5224d1aa6a79e549a80b048?format=webp&width=800&height=1200"
+            alt="DEVELOPER CLUB Logo"
+            className="w-32 h-32 object-contain"
+          />
+        </div>
+        <CardTitle className="text-3xl text-center gradient-text mb-2">
+          DEVELOPER CLUB
+        </CardTitle>
+        <CardDescription className="text-center text-foreground/80">
+          "A Initiative of CSE DEPT"
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-6">
+        <p className="text-center text-foreground/80 text-sm md:text-base leading-relaxed">
+          The Developer Club is an initiative to nurture programming skills, promote collaborative development practices, and create a vibrant community of passionate developers working on real-world projects.
+        </p>
+
+        {/* Club Leadership */}
+        <div className="space-y-3 border-t border-primary/10 pt-6">
+          <h4 className="font-semibold text-lg text-neon-blue mb-4">Leadership</h4>
+          <div className="space-y-2">
+            <div className="p-3 bg-gradient-to-r from-neon-blue/20 to-transparent rounded-lg border border-neon-blue/30">
+              <p className="text-sm font-medium text-neon-blue">President</p>
+              <p className="text-sm text-foreground/90">Mr. Mohamed Irfan M – IV Year CSE</p>
+            </div>
+            <div className="p-3 bg-gradient-to-r from-neon-blue/20 to-transparent rounded-lg border border-neon-blue/30">
+              <p className="text-sm font-medium text-neon-blue">Vice President</p>
+              <p className="text-sm text-foreground/90">Mr. A R Fazil – III Year CSE</p>
+            </div>
+            <div className="p-3 bg-gradient-to-r from-neon-blue/20 to-transparent rounded-lg border border-neon-blue/30">
+              <p className="text-sm font-medium text-neon-blue">Secretary</p>
+              <p className="text-sm text-foreground/90">Mr. Venkatachalapathi M – II Year CSE</p>
+            </div>
+            <div className="p-3 bg-gradient-to-r from-neon-blue/20 to-transparent rounded-lg border border-neon-blue/30">
+              <p className="text-sm font-medium text-neon-blue">Joint Secretary</p>
+              <p className="text-sm text-foreground/90">Mr. Chandru N – II Year CSE</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Branches with Collapsible Sections */}
+        <div className="space-y-3 border-t border-primary/10 pt-6">
+          <h4 className="font-semibold text-lg text-neon-blue mb-4">Members</h4>
+          <div className="space-y-3">
+            {branches.map((branch) => (
+              <div key={branch.name} className="border border-primary/20 rounded-lg overflow-hidden">
+                {/* Branch Toggle Button */}
+                <button
+                  onClick={() => toggleBranch(branch.name)}
+                  className="w-full p-3 bg-gradient-to-r from-neon-blue/20 to-transparent hover:from-neon-blue/30 hover:to-transparent transition-colors flex items-center justify-between"
+                >
+                  <span className="font-semibold text-neon-blue text-sm md:text-base">{branch.name} Branch</span>
+                  <ChevronDown className={`w-4 h-4 text-neon-blue transition-transform ${expandedBranches[branch.name] ? 'rotate-180' : ''}`} />
+                </button>
+
+                {/* Branch Content */}
+                {expandedBranches[branch.name] && (
+                  <div className="p-4 space-y-4 bg-background/20">
+                    {/* Executive Members Section */}
+                    <div className="space-y-2">
+                      <button
+                        onClick={() => toggleSection(`${branch.name}-exec`)}
+                        className="w-full p-2 bg-neon-blue/20 hover:bg-neon-blue/30 transition-colors rounded-lg flex items-center justify-between"
+                      >
+                        <span className="text-sm font-medium text-neon-blue">Executive Members ({branch.executives.length})</span>
+                        <ChevronDown className={`w-4 h-4 text-neon-blue transition-transform ${expandedSection[`${branch.name}-exec`] ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {expandedSection[`${branch.name}-exec`] && (
+                        <div className="max-h-64 overflow-y-auto space-y-2 pl-2 pr-2">
+                          {branch.executives.map((member, idx) => (
+                            <div key={idx} className="p-2 bg-neon-blue/10 rounded border border-neon-blue/20">
+                              <p className="text-xs text-foreground/80">⭐ {member}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Volunteers Section */}
+                    <div className="space-y-2">
+                      <button
+                        onClick={() => toggleSection(`${branch.name}-vol`)}
+                        className="w-full p-2 bg-background/50 hover:bg-background/70 transition-colors rounded-lg flex items-center justify-between"
+                      >
+                        <span className="text-sm font-medium text-foreground/80">Volunteers ({branch.volunteers.length})</span>
+                        <ChevronDown className={`w-4 h-4 text-foreground/80 transition-transform ${expandedSection[`${branch.name}-vol`] ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {expandedSection[`${branch.name}-vol`] && (
+                        <div className="max-h-64 overflow-y-auto space-y-2 pl-2 pr-2">
+                          {branch.volunteers.map((member, idx) => (
+                            <div key={idx} className="p-2 bg-background/30 rounded border border-primary/10">
+                              <p className="text-xs text-foreground/70">{member}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 import {
   Target,
   MessageSquare,
