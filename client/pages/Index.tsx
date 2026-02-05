@@ -512,72 +512,46 @@ export default function Index() {
                 { title: "Secretary", name: "Mr. Venkatachalapathi M – II Year CSE" },
                 { title: "Joint Secretary", name: "Mr. Chandru N – II Year CSE" }
               ]}
-              branches={[
-                {
-                  name: "CSE",
-                  executives: [
-                    "Barakath Nisha A – II Year CSE",
-                    "Hafila Farhana J – II Year CSE",
-                    "John Kennedy – II Year CSE",
-                    "Saburunnisha S – II Year CSE"
-                  ],
-                  volunteers: [
-                    "Dhana Shree D – II Year CSE",
-                    "Rasha Noorjahan S – II Year CSE",
-                    "Shifu Y – II Year CSE",
-                    "Sidiq A – II Year CSE"
-                  ]
-                },
-                {
-                  name: "AI & DS",
-                  executives: [
-                    "Ayeesha Rilwana H – II Year AI & DS",
-                    "Pugalarasu J R – II Year AI & DS",
-                    "Ramzani A – II Year AI & DS",
-                    "Sowmiya K – II Year AI & DS"
-                  ],
-                  volunteers: [
-                    "Gowtham J – II Year AI & DS",
-                    "James Inbaraj S – II Year AI & DS",
-                    "Kamila G – II Year AI & DS",
-                    "Rakshantha J – II Year AI & DS",
-                    "Sathiya Begum S – II Year AI & DS",
-                    "Sreemathi R – II Year AI & DS",
-                    "Vaishnavi M – II Year AI & DS"
-                  ]
-                },
-                {
-                  name: "IT",
-                  executives: [
-                    "Asha Banu M – II Year IT",
-                    "Meena G – II Year IT",
-                    "Mohammed Ashiq A – II Year IT",
-                    "Siddik M – II Year IT"
-                  ],
-                  volunteers: [
-                    "Abuhuraira G J S – II Year IT",
-                    "Archana A – II Year IT",
-                    "Bharath S – II Year IT",
-                    "Gowtham P – II Year IT",
-                    "Kishore S – II Year IT",
-                    "Manasha G – II Year IT",
-                    "Oviya S – II Year IT",
-                    "Thamizhini M – II Year IT"
-                  ]
-                },
-                {
-                  name: "ECE",
-                  executives: [
-                    "Gajini K – II Year ECE",
-                    "Haseena Mariyam M – II Year ECE",
-                    "Nandika M – II Year ECE"
-                  ],
-                  volunteers: [
-                    "Azeeba Shana S – II Year ECE",
-                    "Eswaran S – II Year ECE",
-                    "Nilafar Nisha K – II Year ECE"
-                  ]
-                }
+              executives={[
+                "Barakath Nisha A – II Year CSE",
+                "Hafila Farhana J – II Year CSE",
+                "John Kennedy – II Year CSE",
+                "Saburunnisha S – II Year CSE",
+                "Ayeesha Rilwana H – II Year AI & DS",
+                "Pugalarasu J R – II Year AI & DS",
+                "Ramzani A – II Year AI & DS",
+                "Sowmiya K – II Year AI & DS",
+                "Asha Banu M – II Year IT",
+                "Meena G – II Year IT",
+                "Mohammed Ashiq A – II Year IT",
+                "Siddik M – II Year IT",
+                "Gajini K – II Year ECE",
+                "Haseena Mariyam M – II Year ECE",
+                "Nandika M – II Year ECE"
+              ]}
+              volunteers={[
+                "Dhana Shree D – II Year CSE",
+                "Rasha Noorjahan S – II Year CSE",
+                "Shifu Y – II Year CSE",
+                "Sidiq A – II Year CSE",
+                "Gowtham J – II Year AI & DS",
+                "James Inbaraj S – II Year AI & DS",
+                "Kamila G – II Year AI & DS",
+                "Rakshantha J – II Year AI & DS",
+                "Sathiya Begum S – II Year AI & DS",
+                "Sreemathi R – II Year AI & DS",
+                "Vaishnavi M – II Year AI & DS",
+                "Abuhuraira G J S – II Year IT",
+                "Archana A – II Year IT",
+                "Bharath S – II Year IT",
+                "Gowtham P – II Year IT",
+                "Kishore S – II Year IT",
+                "Manasha G – II Year IT",
+                "Oviya S – II Year IT",
+                "Thamizhini M – II Year IT",
+                "Azeeba Shana S – II Year ECE",
+                "Eswaran S – II Year ECE",
+                "Nilafar Nisha K – II Year ECE"
               ]}
             />
 
