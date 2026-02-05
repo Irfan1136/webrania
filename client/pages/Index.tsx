@@ -600,71 +600,34 @@ export default function Index() {
             />
 
             {/* TECHNO HiVE Club */}
-            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
-              <CardHeader className="pb-0">
-                <div className="flex justify-center mb-6 -mx-6 -mt-6 bg-gradient-to-b from-neon-purple/10 to-transparent pt-6 pb-8">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F93405f7a24264f08a539d74ee6745014?format=webp&width=800&height=1200"
-                    alt="TECHNO HiVE Logo"
-                    className="w-32 h-32 object-contain"
-                  />
-                </div>
-                <CardTitle className="text-3xl text-center gradient-text mb-2">
-                  TECHNO HiVE
-                </CardTitle>
-                <CardDescription className="text-center text-foreground/80">
-                  "Innovation Through Collaboration"
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-center text-foreground/80 text-sm md:text-base leading-relaxed">
-                  TECHNO HiVE is dedicated to exploring cutting-edge technologies, fostering innovation, and building a community of tech enthusiasts who collaborate on groundbreaking projects.
-                </p>
-
-                {/* Club Leadership */}
-                <div className="space-y-3 border-t border-primary/10 pt-6">
-                  <h4 className="font-semibold text-lg text-neon-purple mb-4">Leadership</h4>
-                  <div className="space-y-2">
-                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
-                      <p className="text-sm font-medium text-foreground/90">President</p>
-                      <p className="text-sm text-foreground/70">Ms. Priyanga J – IV Year CSE</p>
-                    </div>
-                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
-                      <p className="text-sm font-medium text-foreground/90">Vice President</p>
-                      <p className="text-sm text-foreground/70">Mr. Jesuraja J – III Year CSE</p>
-                    </div>
-                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
-                      <p className="text-sm font-medium text-foreground/90">Secretary</p>
-                      <p className="text-sm text-foreground/70">Mr. Mohamed Asik I – III Year CSE</p>
-                    </div>
-                    <div className="p-3 bg-background/30 rounded-lg border border-primary/10">
-                      <p className="text-sm font-medium text-foreground/90">Joint Secretary</p>
-                      <p className="text-sm text-foreground/70">Ms. Saburunnisha S – II Year CSE</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Executive Members */}
-                <div className="space-y-3 border-t border-primary/10 pt-6">
-                  <h4 className="font-semibold text-lg text-neon-purple mb-4">Executive Members</h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {[
-                      "Mr. Apsal S – IV Year CSE",
-                      "Mr. Arunpandi M – IV Year CSE",
-                      "Ms. Priya Jeniffer S – IV Year CSE",
-                      "Mr. AR Fazil – III Year CSE",
-                      "Mr. Siddiq Raja A – II Year CSE",
-                      "Ms. Kaniska – II Year CSE",
-                      "Ms. Hafila Farhana J – II Year CSE"
-                    ].map((member, index) => (
-                      <div key={index} className="p-2 bg-background/20 rounded border border-primary/5">
-                        <p className="text-xs text-foreground/80">{member}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <ClubCard
+              clubName="TECHNO HiVE"
+              clubTagline='"Innovation Through Collaboration"'
+              clubDescription="TECHNO HiVE is dedicated to exploring cutting-edge technologies, fostering innovation, and building a community of tech enthusiasts who collaborate on groundbreaking projects."
+              logoUrl="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F93405f7a24264f08a539d74ee6745014?format=webp&width=800&height=1200"
+              themeColor="purple"
+              leadership={[
+                { title: "President", name: "Ms. Priyanga J – IV Year CSE" },
+                { title: "Vice President", name: "Mr. Jesuraja J – III Year CSE" },
+                { title: "Secretary", name: "Mr. Mohamed Asik I – III Year CSE" },
+                { title: "Joint Secretary", name: "Ms. Saburunnisha S – II Year CSE" }
+              ]}
+              branches={[
+                {
+                  name: "All Branches",
+                  executives: [
+                    "Mr. Apsal S – IV Year CSE",
+                    "Mr. Arunpandi M – IV Year CSE",
+                    "Ms. Priya Jeniffer S – IV Year CSE",
+                    "Mr. AR Fazil – III Year CSE",
+                    "Mr. Siddiq Raja A – II Year CSE",
+                    "Ms. Kaniska – II Year CSE",
+                    "Ms. Hafila Farhana J – II Year CSE"
+                  ],
+                  volunteers: []
+                }
+              ]}
+            />
 
           </div>
         </div>
