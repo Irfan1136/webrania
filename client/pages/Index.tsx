@@ -1108,49 +1108,36 @@ export default function Index() {
                 <div className="space-y-4">
                   {[
                     {
-                      name: "Paper Presentation",
-                      icon: "📄",
-                      members: "1-2 Members",
-                      details: "(12-15 Slides)",
-                      place: "SEMINAR HALL",
-                      description:
-                        "Present your research findings, technical innovations, or emerging technology concepts through a professional presentation. Topics can cover AI/ML, blockchain, IoT, cybersecurity, software engineering, web development, mobile computing, or any cutting-edge technology. Presentations should be well-researched, technically sound, and include practical applications. Judges will evaluate based on content quality, presentation skills, technical depth, innovation, and Q&A handling. Time limit: 8-10 minutes plus 2-3 minutes for questions. Visual aids and demonstrations are encouraged.",
-                    },
-                    {
-                      name: "Project Presentation",
-                      icon: "💻",
-                      members: "3-4 Members",
+                      name: "Innovation Pitch",
+                      icon: "💡",
+                      members: "1-3 Members",
                       details: "",
-                      place: "AUDITORIUM",
                       description:
-                        "Showcase your completed software/hardware projects with live demonstrations. Projects can include web applications, mobile apps, desktop software, embedded systems, IoT devices, games, or any innovative technical solution. Teams must present the problem statement, solution approach, technical architecture, implementation details, challenges faced, and future enhancements. Demonstration of working prototype is mandatory. Evaluation criteria include innovation, technical complexity, user interface, functionality, code quality, teamwork, and presentation clarity. Time limit: 12-15 minutes including demo and Q&A.",
+                        "Pitch your innovative ideas and groundbreaking concepts to a panel of expert judges. This event encourages creative thinking and entrepreneurial spirit. Participants should present a unique problem solution, business idea, or technological innovation with clear implementation strategy and potential impact. Presentation should include problem statement, proposed solution, feasibility, and market potential. Time limit: 5-7 minutes for pitch plus 3 minutes for Q&A. Judges will evaluate based on innovation, feasibility, presentation skills, and potential impact.",
                     },
                     {
-                      name: "Code Debugging",
+                      name: "Project Arena",
+                      icon: "🏗️",
+                      members: "3-5 Members",
+                      details: "",
+                      description:
+                        "Showcase your completed projects with live demonstrations. Projects can be software applications, hardware solutions, web platforms, mobile apps, or any technical implementation. Present your project architecture, key features, development process, and live working demo. Evaluation criteria include technical complexity, innovation, user interface design, functionality, and presentation quality. Time limit: 10-12 minutes including Q&A.",
+                    },
+                    {
+                      name: "Debugging Duel",
                       icon: "🐛",
                       members: "1-2 Members",
                       details: "",
-                      place: "CC2",
                       description:
-                        "Test your analytical and problem-solving skills by identifying, analyzing, and fixing logical errors, syntax errors, and runtime issues in provided code snippets. Programming languages may include C, C++, Java, Python, JavaScript, or pseudo-code. Participants will receive code samples with intentional bugs and must provide corrected versions with explanations. Types of errors include infinite loops, memory leaks, incorrect algorithms, wrong data structures, improper variable usage, and logical mistakes. Time limit: 45-60 minutes. Points awarded for correct identification, proper fixes, and clear explanations of the debugging process.",
+                        "Put your debugging skills to the test! Identify and fix errors in provided code snippets. Participants will debug code across multiple programming languages including C, C++, Java, Python, and JavaScript. Test your problem-solving ability by finding logical, syntax, and runtime errors. Correct identification and explanation of bugs determines your score. Time limit: 45-60 minutes. Fastest and most accurate debugging wins!",
                     },
                     {
-                      name: "Technical Quiz",
+                      name: "Quizophile",
                       icon: "🧠",
                       members: "1-2 Members",
                       details: "",
-                      place: "CC2",
                       description:
-                        "Comprehensive knowledge test covering computer science fundamentals, programming concepts, current technology trends, and industry awareness. Topics include data structures & algorithms, operating systems, database management, computer networks, software engineering, object-oriented programming, web technologies, mobile development, artificial intelligence, machine learning, cybersecurity, cloud computing, and latest tech news. Question formats include multiple choice, fill-in-the-blanks, true/false, and short answers. Rapid-fire rounds test quick thinking. Total questions: 50-75. Time limit: 60-90 minutes. Bonus points for innovative answers and real-world applications.",
-                    },
-                    {
-                      name: "Poster Designing",
-                      icon: "🎨",
-                      members: "Individual",
-                      details: "",
-                      place: "CC1",
-                      description:
-                        "Design creative and informative posters on cutting-edge technical topics, combining artistic creativity with technical accuracy. Themes can include emerging technologies, future of computing, digital transformation, tech innovations, environmental technology, or social impact of technology. Posters should be visually appealing, well-researched, informative, and technically accurate. Use of graphics, charts, infographics, and creative layouts is encouraged. Size: A1 or A2 format. Evaluation based on creativity, technical content, visual appeal, originality, research quality, and message clarity. Digital tools or hand-drawing both accepted. Time limit: 2-3 hours for on-spot creation.",
+                        "A comprehensive technical knowledge competition covering computer science fundamentals, programming, algorithms, databases, networks, AI/ML, cybersecurity, and current technology trends. Multiple rounds including rapid-fire questions, multiple choice, and short answer formats. Test your knowledge across various domains of computer science and technology. Time limit varies by round. Fastest solvers with highest accuracy advance to final rounds.",
                     },
                   ].map((event, index) => (
                     <div
@@ -1183,12 +1170,6 @@ export default function Index() {
                       </div>
 
                       <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
-                        {event.place && (
-                          <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed mb-2">
-                            <span className="font-bold">PLACE:</span>{" "}
-                            {event.place}
-                          </p>
-                        )}
                         <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
                           {event.description}
                         </p>
@@ -1214,51 +1195,76 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="p-3 bg-background/30 rounded-lg border border-primary/10 group">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center space-x-3">
-                        <span className="text-2xl">🎭</span>
-                        <span className="font-medium text-foreground/90">
-                          Talent Show
-                        </span>
+                  {[
+                    {
+                      name: "Reels & Photography",
+                      icon: "📸",
+                      members: "1-2 Members",
+                      details: "",
+                      description:
+                        "Create engaging short-form video content or showcase your photography skills. Submit creative reels, short films, photo series, or visual storytelling. Videos should be 15-60 seconds long and can cover topics like campus life, technology, comedy, education, or social awareness. Photography entries can be single stunning shots or curated collections. Judging criteria: creativity, visual appeal, message clarity, and technical quality.",
+                    },
+                    {
+                      name: "Connection",
+                      icon: "🎮",
+                      members: "1-4 Members",
+                      details: "",
+                      description:
+                        "A fun networking and connection-building event designed to bring people together. Participate in engaging activities, games, and icebreaker challenges. Build new friendships, expand your network, and connect with people from different backgrounds. This event focuses on communication, teamwork, and creating lasting connections within the college community.",
+                    },
+                    {
+                      name: "Memory Relay",
+                      icon: "🧩",
+                      members: "2-3 Members",
+                      details: "",
+                      description:
+                        "A fast-paced memory-based team competition! Teams compete through multiple rounds of memory challenges including image recall, pattern recognition, sequence memory, and rapid memory puzzles. Test your memory power and team coordination. Quick thinking and concentration are key. Winners are determined by accuracy and speed across all rounds.",
+                    },
+                    {
+                      name: "Talent Show",
+                      icon: "🎭",
+                      members: "Solo/Individual",
+                      details: "",
+                      description:
+                        "Express your unique talents and creativity! Showcase individual talents including vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any creative solo performance. Group dance is not allowed. Time limit: 3-5 minutes. Participants may use backing tracks. Evaluation based on creativity, stage presence, and entertainment value.",
+                    },
+                  ].map((event, index) => (
+                    <div
+                      key={index}
+                      className="p-3 bg-background/30 rounded-lg border border-primary/10 group"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center space-x-3">
+                          <span className="text-2xl">{event.icon}</span>
+                          <span className="text-sm sm:text-base font-medium text-foreground/90">
+                            {event.name}
+                          </span>
+                        </div>
+                        <div className="h-6 px-2 text-xs text-foreground/70 flex items-center select-none">
+                          <ChevronDown className="w-3 h-3 mr-1" />
+                          More
+                        </div>
                       </div>
-                      <div className="h-6 px-2 text-xs text-foreground/70 flex items-center select-none">
-                        <ChevronDown className="w-3 h-3 mr-1" />
-                        More
+                      <div className="ml-11 space-y-1">
+                        <div className="flex items-center space-x-2">
+                          <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
+                            {event.members}
+                          </span>
+                          {event.details && (
+                            <span className="text-xs text-foreground/60">
+                              {event.details}
+                            </span>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                    <div className="ml-11">
-                      <span className="text-xs px-2 py-1 bg-destructive/20 text-destructive rounded-full font-medium">
-                        No Group Dance
-                      </span>
-                    </div>
 
-                    <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
-                      <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
-                        Express your unique individual talents and creativity!
-                        Accepted performances include: vocal singing (any
-                        genre), musical instruments (guitar, keyboard, drums,
-                        flute, etc.), solo dance (classical, western, folk),
-                        stand-up comedy, poetry recitation, storytelling,
-                        beatboxing, magic tricks, mimicry, mono-acting, or any
-                        other creative solo performance. Group dance is strictly
-                        prohibited, but all other individual talents are
-                        welcomed and encouraged. Time limit: 3-5 minutes per
-                        performance. Participants may use backing tracks or
-                        instrumental music. Evaluation criteria include
-                        creativity, stage presence, audience engagement,
-                        technical skill, and entertainment value. Prizes for
-                        most creative, most entertaining, and best overall
-                        performance!
-                      </p>
+                      <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
+                        <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
+                          {event.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
-                    <p className="text-sm text-foreground/80 italic">
-                      Show off your unique talents, from singing to stand-up
-                      comedy and more!
-                    </p>
-                  </div>
+                  ))}
                 </div>
               </CardContent>
             </Card>
