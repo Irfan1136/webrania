@@ -1146,7 +1146,9 @@ export default function Index() {
                     >
                       <div className="flex items-center justify-between mb-2 sm:mb-3">
                         <div className="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
-                          <span className="text-xl sm:text-2xl flex-shrink-0">{event.icon}</span>
+                          <span className="text-xl sm:text-2xl flex-shrink-0">
+                            {event.icon}
+                          </span>
                           <span className="text-xs sm:text-sm md:text-base font-medium text-foreground/90 truncate">
                             {event.name}
                           </span>
@@ -1235,7 +1237,9 @@ export default function Index() {
                     >
                       <div className="flex items-center justify-between mb-2 sm:mb-3">
                         <div className="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
-                          <span className="text-xl sm:text-2xl flex-shrink-0">{event.icon}</span>
+                          <span className="text-xl sm:text-2xl flex-shrink-0">
+                            {event.icon}
+                          </span>
                           <span className="text-xs sm:text-sm md:text-base font-medium text-foreground/90 truncate">
                             {event.name}
                           </span>
