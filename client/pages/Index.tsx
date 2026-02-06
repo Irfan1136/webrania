@@ -512,22 +512,22 @@ export default function Index() {
       {/* Clubs Section */}
       <section id="clubs" className="py-12 md:py-20 lg:py-32 bg-card/30">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30">
+          <div className="text-center mb-12 md:mb-16 px-2">
+            <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30 text-xs sm:text-sm">
               <Users className="w-4 h-4 mr-2" />
               Our Clubs
             </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               Clubs Under <span className="gradient-text">WEBRANIA</span>
             </h2>
-            <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto px-2">
               Specialized interest groups dedicated to fostering innovation,
               learning, and collaboration
             </p>
           </div>
 
           <div
-            className="grid lg:grid-cols-2 gap-8 mb-12"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12"
             suppressHydrationWarning
           >
             {/* DEVELOPER CLUB */}
