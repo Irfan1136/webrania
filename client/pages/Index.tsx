@@ -1270,11 +1270,11 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="flex justify-center mb-10">
+          <div className="flex justify-center mb-10 px-4">
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90"
+              className="bg-primary hover:bg-primary/90 text-xs sm:text-sm md:text-base"
             >
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc8N9EUpRE4TWSNefQga81P6-jIXar_pekRxXoVinc6yCOn9g/viewform?usp=header"
