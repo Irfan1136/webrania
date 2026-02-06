@@ -1118,7 +1118,7 @@ export default function Index() {
                     {
                       name: "Project Arena",
                       icon: "🏗️",
-                      members: "3-5 Members",
+                      members: "3-4 Members",
                       details: "",
                       description:
                         "Showcase your completed projects with live demonstrations. Projects can be software applications, hardware solutions, web platforms, mobile apps, or any technical implementation. Present your project architecture, key features, development process, and live working demo. Evaluation criteria include technical complexity, innovation, user interface design, functionality, and presentation quality. Time limit: 10-12 minutes including Q&A.",
@@ -1126,7 +1126,7 @@ export default function Index() {
                     {
                       name: "Debugging Duel",
                       icon: "🐛",
-                      members: "1-2 Members",
+                      members: "Individual",
                       details: "",
                       description:
                         "Put your debugging skills to the test! Identify and fix errors in provided code snippets. Participants will debug code across multiple programming languages including C, C++, Java, Python, and JavaScript. Test your problem-solving ability by finding logical, syntax, and runtime errors. Correct identification and explanation of bugs determines your score. Time limit: 45-60 minutes. Fastest and most accurate debugging wins!",
@@ -1134,7 +1134,7 @@ export default function Index() {
                     {
                       name: "Quizophile",
                       icon: "🧠",
-                      members: "1-2 Members",
+                      members: "Individual",
                       details: "",
                       description:
                         "A comprehensive technical knowledge competition covering computer science fundamentals, programming, algorithms, databases, networks, AI/ML, cybersecurity, and current technology trends. Multiple rounds including rapid-fire questions, multiple choice, and short answer formats. Test your knowledge across various domains of computer science and technology. Time limit varies by round. Fastest solvers with highest accuracy advance to final rounds.",
@@ -1207,7 +1207,7 @@ export default function Index() {
                     {
                       name: "Connection",
                       icon: "🎮",
-                      members: "1-4 Members",
+                      members: "1-2 Members",
                       details: "",
                       description:
                         "A fun networking and connection-building event designed to bring people together. Participate in engaging activities, games, and icebreaker challenges. Build new friendships, expand your network, and connect with people from different backgrounds. This event focuses on communication, teamwork, and creating lasting connections within the college community.",
@@ -1215,7 +1215,7 @@ export default function Index() {
                     {
                       name: "Memory Relay",
                       icon: "🧩",
-                      members: "2-3 Members",
+                      members: "3-4 Members",
                       details: "",
                       description:
                         "A fast-paced memory-based team competition! Teams compete through multiple rounds of memory challenges including image recall, pattern recognition, sequence memory, and rapid memory puzzles. Test your memory power and team coordination. Quick thinking and concentration are key. Winners are determined by accuracy and speed across all rounds.",
