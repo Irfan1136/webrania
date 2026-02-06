@@ -602,7 +602,7 @@ export default function Index() {
             <ClubCard
               clubName="TECHNO HiVE"
               clubTagline='"Innovation Through Collaboration"'
-              clubDescription="TECHNO HiVE is dedicated to exploring cutting-edge technologies, fostering innovation, and building a community of tech enthusiasts who collaborate on groundbreaking projects."
+              clubDescription="TECHNO HiVE mainly focuses on technical connection sessions related to software and hardware basics, including practical implementation and technical exposure. We organize alumni interactions, workshops, and industry-related sessions to enhance students' real-world technical understanding. Join our community to explore cutting-edge technologies, foster innovation, and collaborate on groundbreaking projects while building connections with industry professionals."
               logoUrl="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F93405f7a24264f08a539d74ee6745014?format=webp&width=800&height=1200"
               themeColor="purple"
               leadership={[
