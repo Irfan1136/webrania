@@ -1090,17 +1090,17 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 md:mb-12">
             {/* Technical Events */}
-            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Code className="w-8 h-8 text-white" />
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 h-full">
+              <CardHeader className="text-center pb-4 sm:pb-6">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <Code className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl gradient-text">
+                <CardTitle className="text-xl sm:text-2xl gradient-text">
                   Technical Events
                 </CardTitle>
-                <CardDescription className="text-sm sm:text-base text-foreground/80">
+                <CardDescription className="text-xs sm:text-base text-foreground/80 px-2">
                   Showcase your technical prowess and problem-solving skills
                 </CardDescription>
               </CardHeader>
