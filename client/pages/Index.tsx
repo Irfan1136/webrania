@@ -534,7 +534,7 @@ export default function Index() {
             <ClubCard
               clubName="DEVELOPER CLUB"
               clubTagline='"A Initiative of CSE DEPT"'
-              clubDescription="The Developer Club is an initiative to nurture programming skills, promote collaborative development practices, and create a vibrant community of passionate developers working on real-world projects."
+              clubDescription="The Developer Club helps students gain knowledge through courses and valuable learning sessions. We share many cost-free and useful courses (similar to Udemy) for continuous learning. The club also encourages networking sessions where juniors and seniors connect, share knowledge, and support each other's growth. Join us to nurture programming skills, promote collaborative development practices, and build a vibrant community of passionate developers working on real-world projects."
               logoUrl="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2Fa49cf763a5224d1aa6a79e549a80b048?format=webp&width=800&height=1200"
               themeColor="blue"
               leadership={[
