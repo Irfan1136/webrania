@@ -1142,23 +1142,23 @@ export default function Index() {
                   ].map((event, index) => (
                     <div
                       key={index}
-                      className="p-3 bg-background/30 rounded-lg border border-primary/10 group"
+                      className="p-3 sm:p-4 bg-background/30 rounded-lg border border-primary/10 group transition-all duration-300 hover:border-primary/30 hover:bg-background/40"
                     >
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center space-x-3">
-                          <span className="text-2xl">{event.icon}</span>
-                          <span className="text-sm sm:text-base font-medium text-foreground/90">
+                      <div className="flex items-center justify-between mb-2 sm:mb-3">
+                        <div className="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
+                          <span className="text-xl sm:text-2xl flex-shrink-0">{event.icon}</span>
+                          <span className="text-xs sm:text-sm md:text-base font-medium text-foreground/90 truncate">
                             {event.name}
                           </span>
                         </div>
-                        <div className="h-6 px-2 text-xs text-foreground/70 flex items-center select-none">
+                        <div className="h-6 px-2 text-xs text-foreground/70 flex items-center select-none flex-shrink-0 ml-2">
                           <ChevronDown className="w-3 h-3 mr-1" />
-                          More
+                          <span className="hidden sm:inline">More</span>
                         </div>
                       </div>
-                      <div className="ml-11 space-y-1">
-                        <div className="flex items-center space-x-2">
-                          <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
+                      <div className="ml-7 sm:ml-11 space-y-1">
+                        <div className="flex items-center space-x-2 flex-wrap gap-1">
+                          <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium whitespace-nowrap">
                             {event.members}
                           </span>
                           {event.details && (
@@ -1169,7 +1169,7 @@ export default function Index() {
                         </div>
                       </div>
 
-                      <div className="mt-3 p-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
+                      <div className="mt-2 sm:mt-3 p-3 sm:p-4 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg hidden group-hover:block">
                         <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">
                           {event.description}
                         </p>
