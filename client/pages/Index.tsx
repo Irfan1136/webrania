@@ -1065,25 +1065,25 @@ export default function Index() {
       {/* Events Section */}
       <section id="events" className="py-12 md:py-20 lg:py-32 bg-card/30">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30">
+          <div className="text-center mb-12 md:mb-16">
+            <Badge className="mb-4 bg-neon-pink/20 text-neon-pink border-neon-pink/30 text-xs sm:text-sm">
               <Calendar className="w-4 h-4 mr-2" />
               Our Events
             </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold mb-2">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 px-2">
               <span className="gradient-text">ACE'2K26</span>
             </h2>
-            <p className="text-lg md:text-2xl text-foreground/80 mb-6">
+            <p className="text-base sm:text-lg md:text-2xl text-foreground/80 mb-4 sm:mb-6 px-2">
               Join Our Technical & Non-Technical Events
             </p>
-            <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto mb-6">
+            <p className="text-sm sm:text-base md:text-lg text-foreground/80 max-w-3xl mx-auto mb-6 px-4">
               Participate in technical and non-technical events designed to
               enhance your skills and showcase your talents
             </p>
-            <div className="mt-3 flex justify-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400 border border-yellow-400/30 shadow">
-                <Calendar className="w-4 h-4" />
-                <span className="text-sm sm:text-base font-semibold tracking-wide uppercase">
+            <div className="mt-4 flex justify-center px-2">
+              <div className="inline-flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400 border border-yellow-400/30 shadow flex-wrap justify-center">
+                <Calendar className="w-4 h-4 flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold tracking-wide uppercase">
                   Event Date: FEB 17, 2026
                 </span>
               </div>
