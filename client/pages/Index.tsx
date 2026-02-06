@@ -1181,15 +1181,15 @@ export default function Index() {
             </Card>
 
             {/* Non-Technical Events */}
-            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-neon-green to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-white" />
+            <Card className="glow-card bg-card/50 backdrop-blur-sm border-primary/20 h-full">
+              <CardHeader className="text-center pb-4 sm:pb-6">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-neon-green to-neon-pink rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <Heart className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl gradient-text">
+                <CardTitle className="text-xl sm:text-2xl gradient-text">
                   Non-Technical Events
                 </CardTitle>
-                <CardDescription className="text-sm sm:text-base text-foreground/80">
+                <CardDescription className="text-xs sm:text-base text-foreground/80 px-2">
                   Express your creativity and showcase your diverse talents
                 </CardDescription>
               </CardHeader>
