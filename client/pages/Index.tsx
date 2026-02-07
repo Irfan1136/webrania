@@ -576,7 +576,7 @@ export default function Index() {
                 "Dhana Shree D – II Year CSE",
                 "Rasha Noorjahan S – II Year CSE",
                 "Shifu Y – II Year CSE",
-                "Sidiq A – II Year CSE",
+                "Sidiq Raja A – II Year CSE",
                 "Gowtham J – II Year AI & DS",
                 "James Inbaraj S – II Year AI & DS",
                 "Kamila G – II Year AI & DS",
