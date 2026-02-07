@@ -1113,7 +1113,7 @@ export default function Index() {
                       members: "1-3 Members",
                       details: "",
                       description:
-                        "Pitch your innovative ideas and groundbreaking concepts to a panel of expert judges. This event encourages creative thinking and entrepreneurial spirit. Participants should present a unique problem solution, business idea, or technological innovation with clear implementation strategy and potential impact. Presentation should include problem statement, proposed solution, feasibility, and market potential. Time limit: 5-7 minutes for pitch plus 3 minutes for Q&A. Judges will evaluate based on innovation, feasibility, presentation skills, and potential impact.",
+                        "✅ DO's: Prepare original technical content, keep slides simple and clear, use readable fonts, follow time limit, bring PPT in pen drive with email backup, practice your presentation, maintain professional dress and behavior. ❌ DON'Ts: Don't copy from internet (plagiarism), don't overcrowd slides with text, avoid excessive animations/sound effects, don't exceed time limit, don't use offensive/irrelevant content, don't argue with judges.",
                     },
                     {
                       name: "Project Arena",
@@ -1121,7 +1121,7 @@ export default function Index() {
                       members: "3-4 Members",
                       details: "",
                       description:
-                        "Showcase your completed projects with live demonstrations. Projects can be software applications, hardware solutions, web platforms, mobile apps, or any technical implementation. Present your project architecture, key features, development process, and live working demo. Evaluation criteria include technical complexity, innovation, user interface design, functionality, and presentation quality. Time limit: 10-12 minutes including Q&A.",
+                        "✅ DO's: Know your project clearly (problem, solution, working, outcome), arrive on time, wear formal/college-approved attire, explain confidently and politely, display project details clearly, manage time wisely. ❌ DON'Ts: Don't copy projects, don't argue with judges, don't leave stall unattended, don't make noise/disturb others, don't damage property, don't misbehave/use inappropriate language, don't give wrong information, don't violate safety rules.",
                     },
                     {
                       name: "Debugging Duel",
@@ -1129,7 +1129,7 @@ export default function Index() {
                       members: "Individual",
                       details: "",
                       description:
-                        "Put your debugging skills to the test! Identify and fix errors in provided code snippets. Participants will debug code across multiple programming languages including C, C++, Java, Python, and JavaScript. Test your problem-solving ability by finding logical, syntax, and runtime errors. Correct identification and explanation of bugs determines your score. Time limit: 45-60 minutes. Fastest and most accurate debugging wins!",
+                        "✅ DO's: Read problem & code carefully, fix one bug at a time and test after each change, use debugging tools and error messages, test with different inputs/edge cases, manage time effectively and remain calm. ❌ DON'Ts: Don't bring mobile phones or smart watches, don't discuss solutions with other participants, don't argue with judges, don't exceed time limit, don't open unnecessary tabs. Time limit: 45-60 minutes.",
                     },
                     {
                       name: "Quizophile",
@@ -1204,7 +1204,7 @@ export default function Index() {
                       members: "1-2 Members",
                       details: "",
                       description:
-                        "Create engaging short-form video content or showcase your photography skills. Submit creative reels, short films, photo series, or visual storytelling. Videos should be 15-60 seconds long and can cover topics like campus life, technology, comedy, education, or social awareness. Photography entries can be single stunning shots or curated collections. Judging criteria: creativity, visual appeal, message clarity, and technical quality.",
+                        "✅ DO's: Follow nature-based metaphor photography theme, submit original content only, use your own mobile/camera, basic editing allowed (brightness, contrast, aspect ratio), reels max 30 seconds with clear message, maintain good audio/video quality, submit on time. ❌ DON'Ts: No copied/old/AI-generated content, no movie/YouTube clips, no offensive/vulgar/political/religious/love content, no heavy manipulation/over-editing/VFX/watermark/logo, no late submissions.",
                     },
                     {
                       name: "Connection",
@@ -1212,7 +1212,7 @@ export default function Index() {
                       members: "1-2 Members",
                       details: "",
                       description:
-                        "A fun networking and connection-building event designed to bring people together. Participate in engaging activities, games, and icebreaker challenges. Build new friendships, expand your network, and connect with people from different backgrounds. This event focuses on communication, teamwork, and creating lasting connections within the college community.",
+                        "✅ DO's: Discuss only within your team, answer when host asks, follow time limit, respect the host and teams, enjoy and participate actively. ❌ DON'Ts: Don't use mobile phones, don't shout answers, don't copy or give hints, don't argue with host, don't disturb other teams. A fun networking event with engaging activities and icebreaker challenges.",
                     },
                     {
                       name: "Talent Show",
@@ -1220,7 +1220,7 @@ export default function Index() {
                       members: "Solo/Individual",
                       details: "",
                       description:
-                        "Express your unique talents and creativity! Showcase individual talents including vocal singing (any genre), musical instruments (guitar, keyboard, drums, flute, etc.), solo dance (classical, western, folk), stand-up comedy, poetry recitation, storytelling, beatboxing, magic tricks, mimicry, mono-acting, or any creative solo performance. Group dance is not allowed. Time limit: 3-5 minutes. Participants may use backing tracks. Evaluation based on creativity, stage presence, and entertainment value.",
+                        "✅ DO's: Practice well in advance, be punctual, wear proper comfortable costume, follow rules and time limit, be confident and smile, respect judges/organizers/participants, keep props and music ready. ❌ DON'Ts: Don't panic on stage, don't exceed time limit, don't copy another's performance, don't argue with judges, don't use dangerous/unsafe props, don't disturb other participants. Time limit: 3-5 minutes.",
                     },
                   ].map((event, index) => (
                     <div
