@@ -558,7 +558,7 @@ export default function Index() {
               executives={[
                 "Barakath Nisha A – II Year CSE",
                 "Hafila Farhana J – II Year CSE",
-                "John Kennedy – II Year CSE",
+                "John Kennedy M – II Year CSE",
                 "Saburunnisha S – II Year CSE",
                 "Ayeesha Rilwana H – II Year AI & DS",
                 "Pugalarasu J R – II Year AI & DS",
@@ -626,7 +626,7 @@ export default function Index() {
                 "Ms. Priya Jeniffer S – IV Year CSE",
                 "Mr. AR Fazil – III Year CSE",
                 "Mr. Siddiq Raja A – II Year CSE",
-                "Ms. Kaniska – II Year CSE",
+                "Ms. Kanisha Fathima N – II Year CSE",
                 "Ms. Hafila Farhana J – II Year CSE",
               ]}
               volunteers={[]}
@@ -1137,7 +1137,7 @@ export default function Index() {
                       members: "Individual",
                       details: "",
                       description:
-                        "A comprehensive technical knowledge competition covering computer science fundamentals, programming, algorithms, databases, networks, AI/ML, cybersecurity, and current technology trends. Multiple rounds including rapid-fire questions, multiple choice, and short answer formats. Test your knowledge across various domains of computer science and technology. Time limit varies by round. Fastest solvers with highest accuracy advance to final rounds.",
+                        "A comprehensive technical knowledge competition using Kahoot! ✅ DO's: Join on time using the Kahoot link/PIN, use only the provided system, ensure stable internet, enter your registered name, follow coordinator instructions, answer independently, keep screen visible, stay on Kahoot only, maintain discipline and silence. ❌ DON'Ts: Don't bring mobile phones (will be collected), smart watches, or earphones; don't open other tabs/windows; don't use Google, ChatGPT, notes, or external help; don't discuss answers; don't refresh/log out without permission; don't attempt multiple logins or use fake names. Any malpractice = immediate disqualification.",
                     },
                   ].map((event, index) => (
                     <div
@@ -1213,14 +1213,6 @@ export default function Index() {
                       details: "",
                       description:
                         "A fun networking and connection-building event designed to bring people together. Participate in engaging activities, games, and icebreaker challenges. Build new friendships, expand your network, and connect with people from different backgrounds. This event focuses on communication, teamwork, and creating lasting connections within the college community.",
-                    },
-                    {
-                      name: "Memory Relay",
-                      icon: "🧩",
-                      members: "3-4 Members",
-                      details: "",
-                      description:
-                        "A fast-paced memory-based team competition! Teams compete through multiple rounds of memory challenges including image recall, pattern recognition, sequence memory, and rapid memory puzzles. Test your memory power and team coordination. Quick thinking and concentration are key. Winners are determined by accuracy and speed across all rounds.",
                     },
                     {
                       name: "Talent Show",
