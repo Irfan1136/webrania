@@ -1407,9 +1407,14 @@ export default function Index() {
                     alt="AL-AMEEN ENGINEERING COLLEGE Logo"
                     className="w-4 h-4 object-contain"
                   />
-                  <span className="text-foreground/80">
+                  <a
+                    href="https://alameen.ac.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-colors"
+                  >
                     AL-AMEEN ENGINEERING COLLEGE
-                  </span>
+                  </a>
                 </div>
               </div>
               <p className="text-xs text-foreground/70 mt-4 inline-block border border-primary/20 rounded px-2 py-1">
