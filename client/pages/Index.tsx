@@ -1071,7 +1071,7 @@ export default function Index() {
               Our Events
             </Badge>
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 px-2">
-              <span className="gradient-text">ACE'2K26</span>
+              <span className="gradient-text">♠ ACE'2K26 ♠</span>
             </h2>
             <p className="text-base sm:text-lg md:text-2xl text-foreground/80 mb-4 sm:mb-6 px-2">
               Join Our Technical & Non-Technical Events
