@@ -1390,6 +1390,24 @@ export default function Index() {
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-primary" />
+                  <a
+                    href="mailto:cse.developerclub@gmail.com"
+                    className="text-foreground/80 hover:text-primary transition-colors"
+                  >
+                    cse.developerclub@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-primary" />
+                  <a
+                    href="mailto:technohiveaec12@gmail.com"
+                    className="text-foreground/80 hover:text-primary transition-colors"
+                  >
+                    technohiveaec12@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
                   <Users className="w-4 h-4 text-primary" />
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F9322a68a83e449cc8adff5cef366c9a5%2F19fc527444b4458fb63e408f611fd371?format=webp&width=800"
