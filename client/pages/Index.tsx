@@ -800,7 +800,7 @@ export default function Index() {
                   </div>
                   <div className="p-4 bg-background/30 rounded-lg border border-primary/10">
                     <h4 className="font-semibold text-lg text-foreground/90 mb-2">
-                      SALAI DIVYA JOTHI S
+                      SALAI DHIVYA JOTHI S
                     </h4>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">
