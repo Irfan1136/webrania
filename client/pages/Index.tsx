@@ -1273,7 +1273,7 @@ export default function Index() {
               className="bg-primary hover:bg-primary/90 text-xs sm:text-sm md:text-base"
             >
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc8N9EUpRE4TWSNefQga81P6-jIXar_pekRxXoVinc6yCOn9g/viewform?usp=header"
+                href="https://forms.gle/uwuzJcQyjSpCr2Pa7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
