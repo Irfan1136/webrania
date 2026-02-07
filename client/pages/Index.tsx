@@ -1308,9 +1308,7 @@ export default function Index() {
                   E-Certificates
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  All participants receive digital certificates for
-                  participation! Winners get special achievement certificates.
-                  Build your portfolio with our official certifications.
+                  📜 <strong>Technical Events:</strong> Participation certificates for all participants. <strong>Non-Technical Events:</strong> E-certificates for participants and special achievement certificates for winners. Build your portfolio with our official certifications!
                 </p>
               </CardContent>
             </Card>
