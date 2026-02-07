@@ -121,7 +121,7 @@ export default function Navigation() {
                   );
                 })}
                 <Button
-                  className="bg-primary hover:bg-primary/90 mt-4"
+                  className="bg-primary hover:bg-primary/90 mt-4 hidden"
                   onClick={() => {
                     window.location.href = 'mailto:aec.webrania@gmail.com?subject=Join WEBRANIA Community';
                     setIsOpen(false);
