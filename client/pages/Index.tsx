@@ -174,7 +174,6 @@ import {
   Shield,
   Heart,
   Zap,
-  Github,
   Instagram,
   Mail,
   ChevronRight,
